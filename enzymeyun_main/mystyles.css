@@ -1,0 +1,23 @@
+@page {
+  margin: 3in;
+}
+body {
+  font-family: "Microsoft YaHei";
+  line-height: 1.5;
+  color: #333;
+  background-color: #f8f8f8;
+}
+
+h1 {
+  color: #029e74;
+}
+h2 {
+  color: #029e74;
+}
+h4 {
+  color: #664596;
+}
+
+p {
+  text-indent: 2em;
+}

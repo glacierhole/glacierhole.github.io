@@ -1,0 +1,263 @@
+---
+title: "network visualization with R"
+author: "饶一率翻译整理"
+date: "2023/8/13"
+output: 
+  html_document:
+    toc: true
+    css: mystyles.css
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning=FALSE)
+```
+
+
+### 5 除了`igraph`其他包`Statnet`，`ggraph`，`simple charts`
+本节提供了一些快速示例，说明静态网络可视化的其他可用方法
+
+#### 5.1 Statnet包网络示例
+Statnet是R语言中的一个著名网络分析包,全名为“Statistical Analysis of Network Data”, 提供了网络数据的转换、模型拟合、预测、可视化等功能。
+Statnet作为网络科学中重要的R语言工具包,拥有广泛的用户基础,包括:
+
+- 网络科学研究人员:使用Statnet进行网络数据分析、建模等研究工作。
+- 数据科学家:利用Statnet在R中进行网络分析。
+- 生物信息学研究人员:分析生物分子网络和互作网络。
+- 社会学家:分析社会关系网络。
+- 程序员:基于Statnet开发新的网络分析工具。
+- 学生:使用Statnet学习网络科学。
+
+`Statnet`包家族包括`network`, `sna`, `ergm`, `stergm`等
+
+```{r}
+library('network')
+nodes <- read.csv("Dataset1-Media-Example-NODES.csv", header=T, as.is=T)
+links <- read.csv("Dataset1-Media-Example-EDGES.csv", header=T, as.is=T)
+
+net4 <- network(links,  vertex.attr=nodes, matrix.type="edgelist", 
+                loops=T, multiple=F, ignore.eval = F)
+
+# 在这里，我们可以很容易地访问边，顶点和网络矩阵:
+#net4[,]
+net4 %n% "net.name" <- "Media Network" 
+net4 %v% "media"
+#net4 %e% "type"
+net4 %v% "col" <- c("gray70", "tomato", "gold")[net4 %v% "media.type"]
+plot(net4, vertex.cex=(net4 %v% "audience.size")/7, vertex.col="col")
+
+```
+
+```{r}
+detach('package:network')
+```
+
+
+
+#### 5.2 ggplot2包网络示例
+`ggraph`包和`ggplot2`包的基本构建原理是一样的逻辑。
+一个好消息是，我们可以直接在`ggraph`包中使用我们的`igraph`对象。下面的代码获取数据并为节点和链接添加单独的层。
+
+```{r}
+library(ggraph)
+library(igraph)
+net <- graph_from_data_frame(d=links, vertices=nodes, directed=T)
+colrs <- c("gray50", "tomato", "gold")
+V(net)$color <- colrs[V(net)$media.type]
+#par(mfrow=c(2,2), mar=c(0,0,0,0))
+ggraph(net) +
+  geom_edge_link() +   
+  geom_node_point()    
+# 加上布局，标题
+ggraph(net, layout="lgl") +
+  geom_edge_link() +
+  ggtitle("Look ma, no nodes!") 
+# 加上边的格式
+ggraph(net, layout="lgl") +
+  geom_edge_fan(color="gray50", width=0.8, alpha=0.5) + 
+  geom_node_point(color=V(net)$color, size=8) +
+  theme_void()
+# 添加其他视觉原件如图例
+ggraph(net, layout="lgl") +
+  geom_edge_fan(aes(color = type), width = 3) +
+  geom_node_point(aes(size = audience.size)) +
+  theme_void()
+# 我们可以使用geom_node_text()或geom_node_label()添加一个带有节点标签的层
+ggraph(net,  layout = 'lgl') +
+  geom_edge_arc(color="gray", curvature=0.3) +            
+  geom_node_point(color="orange", aes(size = audience.size)) +     
+  geom_node_text(aes(label = media), size=3, color="gray50", repel=T) +
+  theme_void()
+detach("package:ggraph") 
+```
+
+> 我们来复习一下命令
+> -
+- `graphics::parp(mfrow=c(1,2)) `#多图布局
+- `igraph::graph()`#生成网络图
+
+
+### 6 交互式网络可视化
+
+前面的`igraph`包，`ggraph`包都是绘制静态的网络图
+
+#### 6.1 用R制作简单的动画
+如果你已经安装了`ndtv`，你还应该有一个名为`animation`的包。如果没有，现在是使用`install.packages('animation')`安装它的好时机。这个包提供了一种简单的技术，可以在r中创建各种动画(不一定与网络相关)。它的工作原理是生成多个图形，并将它们组合成GIF动画。
+需要安装一个插件，所以不想搞了。
+
+#### 6.2 使用visNetwork的交互式JS可视化
+
+将R图片导出成HTML/JavaScripts。
+有很多包可以做这个事情，`rchats`和`htmlwidgets`
+在这里，我们将快速浏览`visNetwork`，它使用`vis.js` javascript库生成交互式网络可视化.
+
+```{r}
+library('visNetwork') 
+visNetwork(nodes, links, width="100%", height="400px", background="#eeefff",
+           main="Network", submain="And what a great network it is!",
+           footer= "Hyperlinks and mentions among media sources")
+#我们将开始添加新的节点和边缘属性到我们的数据框架。
+vis.nodes <- nodes
+vis.links <- links
+## 节点属性
+vis.nodes$shape  <- "dot"  
+vis.nodes$shadow <- FALSE # 节点会投下阴影
+vis.nodes$title  <- vis.nodes$media # 点击出现的文本
+vis.nodes$label  <- vis.nodes$type.label # 直接出现的文本
+vis.nodes$size   <- vis.nodes$audience.size # 节点的大小
+vis.nodes$borderWidth <- 2 # 节点边缘的线条宽度
+vis.nodes$color.background <- c("slategrey", "tomato", "gold")[vis.nodes$media.type]
+vis.nodes$color.border <- "black"
+vis.nodes$color.highlight.background <- "orange"
+vis.nodes$color.highlight.border <- "darkred"
+## 边属性
+#vis.links$width <- 3
+vis.links$label <- vis.links$type
+vis.links$width <- 1+links$weight/8 # 线条宽度
+vis.links$color <- "gray"    # 线条颜色
+vis.links$arrows <- "middle" # 箭头位置: 'from', 'to', or 'middle'
+vis.links$smooth <- FALSE    # 边缘应该是弯曲的吗?
+vis.links$shadow <- FALSE    # 线条阴影
+
+## 绘图
+visnet <- visNetwork(vis.nodes, vis.links)
+visnet
+```
+
+我们也可以直接使用v`isNodes()`和`visEdges()`来设置可视化选项。
+
+```{r}
+visnet2 <- visNetwork(nodes, links)
+visnet2 <- visNodes(visnet2, shape = "square", shadow = TRUE, 
+            color=list(background="gray", highlight="orange", border="black"))
+visnet2 <- visEdges(visnet2, color=list(color="black", highlight = "orange"),
+                    smooth = FALSE, width=2, dashes= TRUE, arrows = 'middle' ) 
+visnet2
+```
+
+`visNetwork`在`visOptions()`函数中提供了许多其他选项。例如，我们可以突出显示所选节点的所有邻居(`highlightNearest`)，或者添加一个下拉菜单来选择节点子集(`selectedBy`)。这些子集基于数据中的一列——这里我们使用类型标签。
+```{r}
+visOptions(visnet, highlightNearest = TRUE, selectedBy = "label")
+```
+
+`visNetwork`还可以使用预定义的节点组。可以使用`visGroups()`设置属于每个组的节点的视觉特征。我们可以使用`visLegend()`添加一个自动生成的组图例。
+
+```{r}
+nodes$group <- nodes$type.label 
+visnet3 <- visNetwork(nodes, links)
+visnet3 <- visGroups(visnet3, groupname = "Newspaper", shape = "square",
+                     color = list(background = "gray", border="black"))
+visnet3 <- visGroups(visnet3, groupname = "TV", shape = "dot",       
+                     color = list(background = "tomato", border="black"))
+visnet3 <- visGroups(visnet3, groupname = "Online", shape = "diamond",   
+                     color = list(background = "orange", border="black"))
+visLegend(visnet3, main="Legend", position="right", ncol=1) 
+# 欲了解更多信息，你也可以查看:
+#?visOptions # available options 
+#?visLayout  # available layouts
+#?visGroups  # using node groups
+#?visLegend  # adding a legend
+
+# Detach the package since we're done with it. 
+detach('package:visNetwork')
+```
+
+
+#### 6.3  使用threejs进行交互式JS可视化
+使用`three.js`的javascript库和`htmlwidgets`R包生成交互式网络可视化。
+
+`threejs` 可以直接读取 `igraph` 对象
+`install.packages('threejs')`
+
+主要的画图函数是 `graphjs` 
+```{r}
+library(threejs)
+library(htmlwidgets)
+library(igraph)
+# 去掉布局
+library('igraph')
+net <- graph_from_data_frame(d=links, vertices=nodes, directed=T) 
+net.js <- net
+graph_attr(net.js, "layout") <- NULL 
+# RStudio 可能无法正确的渲染三维的图像，所以还是用html打开
+# ?graphjs来查看各种用法
+gjs <- graphjs(net.js, main="Network!", bg="gray10", showLabels=F, stroke=F, 
+               curvature=0.1, attraction=0.9, repulsion=0.8, opacity=0.9)
+# 打印显示
+print(gjs)
+saveWidget(gjs, file="Media-Network-gjs.html")
+# browseURL("Media-Network-gjs.html")
+xfun::embed_file("Media-Network-gjs.html") # 实现一个下载
+
+```
+
+```{r results='asis'}
+cat("<a href='Media-Network-gjs.html'>点此下载</a>") # 实现另一个下载
+```
+
+目前无法直接进行html的镶嵌。
+
+
+```{r}
+#我们还可以通过使用布局列表、顶点颜色和边缘颜色来创建简单的动画，这些颜色会在每一步切换。
+gjs.an <- graphjs(net.js, bg="gray10", showLabels=F, stroke=F, 
+                  layout=list(layout_randomly(net.js, dim=3),
+                              layout_with_fr(net.js,  dim=3),
+                              layout_with_drl(net.js, dim=3),  
+                              layout_on_sphere(net.js)),
+                  vertex.color=list(V(net.js)$color, "gray", "orange", 
+                                    V(net.js)$color),
+                  main=list("Random Layout", "Fruchterman-Reingold", 
+                            "DrL layout", "Sphere" ) )
+print(gjs.an)
+saveWidget(gjs.an, file="Media-Network-gjs-an.html")
+# browseURL("Media-Network-gjs-an.html") #letitgo
+
+```
+
+
+
+#### 6.4  使用networkD3的交互式JS可视化
+
+yeyeyeye!这也是我最开始学习的绘图包
+使用`D3 javascript`库生成交互式网络可视化。
+`install.packages("networkD3")`
+这个库需要的数据是标准的边列表形式，有一些改动。
+- 节点id必须是数字，并且必须从0开始。
+- 一个简单的方法是将我们的角色id转换为因子变量，将其转换为数字，并确保它从0开始.
+```{r}
+library(networkD3)
+# 重新编码边
+links.d3 <- data.frame(from=as.numeric(factor(links$from))-1, 
+                       to=as.numeric(factor(links$to))-1 )
+# 重新编码点
+nodes.d3 <- cbind(idn=factor(nodes$media, levels=nodes$media), nodes) 
+# 绘图
+forceNetwork(Links = links.d3, Nodes = nodes.d3, Source="from", Target="to",
+               NodeID = "idn", Group = "type.label",linkWidth = 1,
+               linkColour = "#afafaf", fontSize=12, zoom=T, legend=T,
+               Nodesize=6, opacity = 0.8, charge=-300, 
+               width = 600, height = 400)
+```
+
+`networkD3` 目前的上手体验没有`visnetwork`好用

@@ -1,0 +1,44 @@
+---
+title: "PeopleNet1.0"
+author: "饶一率"
+date: "2023/8/8"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning=FALSE)
+```
+
+## 这是一个制作人物关系网的R语言教程
+
+### 1 必要的安装
+* R-base
+* RStudio
+* rmarkdown
+* networkD3
+
+### 2 使用
+在Rstudio中打开本rmd文件，点击 **Knit** 按钮可以生成一个html文件。
+
+### 3 数据准备-excel
+按照这个格式组织xlsx文件
+```{r}
+df <- data.frame(
+  user = c("A", "B", "C", "D"),
+  fan1 = c("B", "C", "D", "A"),
+  fan2 = c("C", "D", "A", "B"),
+  fan3 = c("D", "A", "B", "C")
+)
+
+# 转换为网络图数据
+nodes <- data.frame(name=unique(c(df$user, unlist(df[-1]))))
+links <- cbind(from=match(df[-1], nodes$name)-1, 
+               to=match(df$user, nodes$name)-1)
+
+# 绘制网络图  
+library(networkD3)
+net <- forceNetwork(Links = links, Nodes = nodes, Source = "from", Target = "to",
+                    NodeID = "name", Group = "name", opacity = 0.8)
+net %>% forceNetwork::arrows(arrows = "to")
+net
+```
