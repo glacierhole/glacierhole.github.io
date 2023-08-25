@@ -1,8 +1,8 @@
 <!-- _coverpage.md -->
 
-![logo](logo.jpeg "Think about AI")
+![logo](head.png "Think about AI")
 
-# Think about AI <small>1.6.0</small>
+# 饶一率的文字空间 <small>1.6.0</small>
 
 > 勤于思考 乐于分享
 
