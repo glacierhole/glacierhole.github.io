@@ -1,6 +1,7 @@
 <!-- _coverpage.md -->
 
 ![logo](head.png "Think about AI")
+<img width="160px" style="border-radius: 50%" bor src="head.png">
 
 # 饶一率的文字空间 <small>1.6.0</small>
 
