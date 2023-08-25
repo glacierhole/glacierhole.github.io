@@ -9,7 +9,10 @@
 <!-- - 简单、轻便 (压缩后 ~21kB)
 - 无需生成 html 文件
 - 众多主题 -->
+[![stars](https://badgen.net/github/stars/glacierhole/nice_docs?color=4ab8a1)](https://github.com/glacierhole/nice_docs)
+[![forks](https://badgen.net/github/forks/glacierhole/nice_docs?color=4ab8a1)](https://github.com/glacierhole/nice_docs)
+![](https://img.shields.io/badge/%E6%91%B8%E9%B1%BC-%E7%A8%8B%E5%BA%8F%E5%91%98-green)
 
-[GitHub](https://github.com/thinkaboutai)
-[Get Started](README)
-[Wechat](https://open.work.weixin.qq.com/wwopen/sso/3rd_qrConnect?appid=ww94fe0438fd4daa33&redirect_uri=http%3A%2F%2Fhncf56.f3322.net%3A8011&state=91&usertype=member)
+[GitHub](https://github.com/glacierhole/)
+[Get Started](README.md)
+[Wechat]()
