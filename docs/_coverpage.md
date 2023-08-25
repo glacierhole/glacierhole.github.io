@@ -1,13 +1,15 @@
-<img width="160px" style="border-radius: 50%" bor src="style/head_portrait.jpg">
+<!-- _coverpage.md -->
 
-# **docsify-demo**
+![logo](logo.jpeg "Think about AI")
 
-- 本文档是作者折腾 ```docsify```以来的学习历程<br>旨在为大家提供一个较完整的docsify框架结构<br>如果本文能为您得到帮助，请给予支持！
+# Think about AI <small>1.6.0</small>
 
-[![stars](https://badgen.net/github/stars/mochazi/docsify-demo?color=4ab8a1)](https://github.com/mochazi/docsify-demo)
-[![forks](https://badgen.net/github/forks/mochazi/docsify-demo?color=4ab8a1)](https://github.com/mochazi/docsify-demo)
-![](https://img.shields.io/badge/%E6%91%B8%E9%B1%BC-%E7%A8%8B%E5%BA%8F%E5%91%98-green)
+> 勤于思考 乐于分享
 
-[GitHub](https://github.com/mochazi/docsify-demo)
-[开始阅读](?id=中文文档)
+<!-- - 简单、轻便 (压缩后 ~21kB)
+- 无需生成 html 文件
+- 众多主题 -->
 
+[GitHub](https://github.com/thinkaboutai)
+[Get Started](README)
+[Wechat](https://open.work.weixin.qq.com/wwopen/sso/3rd_qrConnect?appid=ww94fe0438fd4daa33&redirect_uri=http%3A%2F%2Fhncf56.f3322.net%3A8011&state=91&usertype=member)
