@@ -1,2 +1,5 @@
 - [主页](/)
-- [翻译](/zh-cn/)
+- Translations
+    - [:cn: 中文](/zh-cn/)
+    - [:us: English](/en-us/)
+    
