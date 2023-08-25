@@ -3,9 +3,8 @@
 在线阅读
 ---
 
-
-[![](https://img.shields.io/badge/GitHub-%E5%9C%A8%E7%BA%BF%E9%98%85%E8%AF%BB-blue)](https://glacierhole.github.io/nice_docs_main/docs/)
-[![](https://img.shields.io/badge/GitHub-%E4%BB%93%E5%BA%93%E5%9C%B0%E5%9D%80-green)](https://github.com/glacierhole/nice_docs)
+-  **[国内优先 Gitee 在线阅读](https://mochazi.gitee.io/docsify-demo)** | [Gitee 仓库地址](https://gitee.com/mochazi/docsify-demo)
+-  **[国外优先 GitHub 在线阅读](https://mochazi.github.io/docsify-demo)** | [GitHub 仓库地址](https://github.com/mochazi/docsify-demo)
 
 ## 编写警告
 > [!WARNING]

@@ -1,4 +1,4 @@
-<img width="160px" style="border-radius: 50%" bor src="/nice_docs_main/docs/style/head_portrait.jpg">
+<img width="160px" style="border-radius: 50%" bor src="style/head_portrait.jpg">
 
 # **docsify-demo**
 
