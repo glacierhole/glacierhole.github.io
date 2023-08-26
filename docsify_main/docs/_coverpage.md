@@ -1,9 +1,9 @@
 <!-- _coverpage.md -->
 
-![logo](../puppy.png "Think about AI")
-<img width="160px" style="border-radius: 50%" bor src="../puppy.png">
 
-# 饶一率的文字空间 <small>1.6.0</small>
+<img width="160px" style="border-radius: 50%" bor src="puppy.png">
+
+# 饶一率的文字空间 <small>1.1.0</small>
 
 > 勤于思考 乐于分享
 
