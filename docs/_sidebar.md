@@ -2,6 +2,5 @@
 - 学习笔记
     - [学习docify笔记](study_note/学习docify笔记.md)
     - [学习visNetwork笔记](study_note/学习visNetwork笔记.md)
-
-– 生存笔记
-    – [学习向上管理](survive_note/学习向上管理.md)
+- 生存笔记
+    - [学习向上管理](survive_note/学习向上管理.md)
