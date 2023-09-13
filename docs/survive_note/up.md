@@ -1,4 +1,4 @@
-# 学习向上管理
+# up
 参考资料：https://www.zhihu.com/answer/2951774126
 下一条https://www.zhihu.com/question/383506058/answer/1134111248
 向上管理，对于不同年龄的打工人来说，有所不同。
