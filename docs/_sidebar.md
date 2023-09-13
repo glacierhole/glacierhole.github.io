@@ -1,6 +1,6 @@
 - [欢迎来到饶一率的文字空间]()
 - 学习笔记~上手项目
-    - [学习docify笔记](study_note/docsify.md)
+    - [学习docsify笔记](study_note/docsify.md)
     - [学习visNetwork笔记](study_note/visNetwork.md)
 
 - 生存笔记
