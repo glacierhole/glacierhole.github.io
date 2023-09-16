@@ -12,7 +12,8 @@
 
 ## 这是正在进行的web可视化项目
 
-## 这是一个网页项目-密码子偏好性计算网页版
-功能：提交非模式生物基因组表达序列文件，和想要在非模式生物钟表达的序列。返回密码子偏好的计算结果图片。
-实现：目前算法功能已经用bash脚本完全实现。在学习编写前端和后端。
-[尚未实现](https://glacierhole.streamlit.app/)
+## 这是一个系列网页项目-密码子偏好性计算网页版
+功能：提交想要在非模式生物钟表达的序列。返回密码子偏好的计算结果报告。
+[Cupriavidus necator H16](https://h16codon.streamlit.app/)
+[Rhodococcus opacus PD630](https://pd630codon.streamlit.app/)
+[Cyberlindnera jadinii](https://cyjcodon.streamlit.app/)
