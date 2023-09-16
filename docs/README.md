@@ -11,7 +11,7 @@
 [R语言与网络可视化2](https://glacierhole.github.io/docs/project/NVwR2.html)
 
 ## 这是正在进行的web可视化项目
-
+[药物小分子筛选结果可视化](https://glacierhole.github.io/docs/project/all1.html)
 ## 这是一个系列网页项目-密码子偏好性计算网页版
 功能：提交想要在非模式生物中表达的序列。
 
