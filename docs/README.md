@@ -6,6 +6,7 @@
 [人际关系网络不可见](https://glacierhole.github.io/docs/project/-PeopleYun.html)
 ## 这是酶工程会议的词云
 [酶工程热点网络](https://glacierhole.github.io/docs/project/EnzymeYun.html)
+[酶工程会议ppt](https://glacierhole.github.io/docs/project/ppt230822.pdf)
 ## 这是R语言可视化的学习文档
 [R语言与网络可视化1](https://glacierhole.github.io/docs/project/NVwR.html)
 [R语言与网络可视化2](https://glacierhole.github.io/docs/project/NVwR2.html)
