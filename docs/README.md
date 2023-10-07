@@ -13,6 +13,7 @@
 
 ## 这是正在进行的web可视化项目
 [药物小分子筛选结果可视化](https://glacierhole.github.io/docs/project/all1.html)
+
 ## 这是一个系列网页项目-密码子偏好性计算网页版
 功能：提交想要在非模式生物中表达的序列。
 
@@ -21,3 +22,6 @@
 - [Cupriavidus necator H16](https://h16codon.streamlit.app/)
 - [Rhodococcus opacus PD630](https://pd630codon.streamlit.app/)
 - [Cyberlindnera jadinii](https://cyjcodon.streamlit.app/)
+
+## 这是今天要啃的文献
+[文献1]((https://glacierhole.github.io/docs/project/article1.html)
