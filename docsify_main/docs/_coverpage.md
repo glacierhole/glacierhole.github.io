@@ -13,4 +13,4 @@
 
 [GitHub](https://github.com/glacierhole/)
 [Get Started](README.md)
-[Wechat]()
+[Wechat](picture/puppy2.png)

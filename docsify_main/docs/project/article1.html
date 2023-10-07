@@ -1,0 +1,577 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html><head><title>Mechanisms of Cytochrome P450-Catalyzed Oxidations</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+<div style="page-break-before:always; page-break-after:always"><div><p><b>Mechanisms of Cytochrome P450-Catalyzed Oxidations<br/>F. Peter Guengerich<br/></b>Department of Biochemistry, Vanderbilt University School of Medicine, Nashville, Tennessee <br/>37232-0146, United States<br/></p>
+<p><b>Abstract<br/></b>Enzymes are complex biological catalysts and are critical to life. Most oxidations of chemicals are <br/>catalyzed by cytochrome P450 (P450, CYP) enzymes, which generally utilize mixed-function <br/>oxidase stoichiometry, utilizing pyridine nucleotides as electron donors: NAD(P)H + O2 + R &#8594; <br/>NAD(P)+ + RO + H2O (where R is a carbon substrate and RO is an oxidized product). The <br/>catalysis of oxidations is largely understood in the context of the heme iron-oxygen complex <br/>generally referred to as Compound I, formally FeO3+, whose basis was in peroxidase chemistry. <br/>Many X-ray crystal structures of P450s are now available (&#8805; 822 structures from &#8805;146 different <br/>P450s) and have helped in understanding catalytic specificity. In addition to hydroxylations, P450s <br/>catalyze more complex oxidations, including C-C bond formation and cleavage. Enzymes derived <br/>from P450s by directed evolution can even catalyze more unusual reactions, e.g. cyclopropanation. <br/>Current P450 questions under investigation include the potential role of the intermediate <br/>Compound 0 (formally FeIII-O2<br/></p>
+<p>&#8722;) in catalysis of some reactions, the roles of high- and low-spin <br/>forms of Compound I, the mechanism of desaturation, the roles of open and closed structures of <br/>P450s in catalysis, the extent of processivity in multi-step oxidations, and the role of the accessory <br/>protein cytochrome b5. More global questions include exactly how structure drives function, <br/>prediction of catalysis, and roles of multiple protein conformations.<br/></p>
+<p><b>Graphical Abstract<br/></b></p>
+<p>Address correspondence to: Prof. F. Peter Guengerich, Department of Biochemistry, Vanderbilt University School of Medicine, 638B <br/>Robinson Research Building, 2200 Pierce Avenue, Nashville, Tennessee 37232-0146, Telephone: 1 (615) 322-2261, FAX: 1 (615) <br/>343-0704, f.guengerich@vanderbilt.edu. <br/><b>Conflict of Interest.</b> The author declares no conflict of interest.<br/></p>
+<p><b>HHS Public Access<br/></b>Author manuscript<br/>ACS Catal. Author manuscript; available in PMC 2019 May 15.<br/></p>
+<p>Published in final edited form as:<br/>ACS Catal. 2018 December 7; 8(12): 10964&#8211;10976. doi:10.1021/acscatal.8b03401.<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p><b>Keywords<br/></b>Cytochrome P450; enzymology; cytochrome b5; Compound I; directed evolution; processivity; <br/>kinetics; oxidation<br/></p>
+<p><b>Background and Introduction<br/></b>Catalysts come in many forms, and enzymes are the catalysts in most biological reactions. <br/>Like all catalysts, they are not consumed in reactions. Enzymes can control regioselectivity <br/>and stereospecificity of reactions of complex organic molecules and, because they are chiral <br/>catalysts (i.e., built of L-amino acids), they can induce stereoselectivity into seemingly non-<br/>chiral molecules (e.g., distinguish between pro-R and pro-S hydrogens on a simple <br/>methylene group such as that in ethanol1,2). Unlike most other catalysts, enzymes are <br/>synthesized in biological systems, coded for by genes.<br/></p>
+<p>The functions of enzymes vary, and several types of enzymes catalyze oxidations and <br/>reductions.2 Of these, &#8805; 95% of those reported in the literature are done by cytochrome P450 <br/>(P450, CYP) enzymes.3 Most of the P450 reactions are oxidations and involve the use of <br/>molecular oxygen, i.e. O2. P450s almost always act as monooxygenases, or mixed-function <br/>oxidases, using the stoichiometry shown in Equation 1 and utilizing the pyridine nucleotide <br/>NADH or NADPH as a cofactor (used to deliver electrons via a flavoprotein, sometimes via <br/>an iron-sulfur protein)<br/></p>
+<p>NAD(P)H + O2 + R NAD(P)+ + RO + H2O (1)<br/></p>
+<p>(where R is an organic substrate and RO is the reaction product), as opposed to the <br/>stoichiometry used in dioxygenases (Equation 2)<br/></p>
+<p>O2 + R RO2 (2)<br/></p>
+<p>Guengerich Page 2<br/></p>
+<p>ACS Catal. Author manuscript; available in PMC 2019 May 15.<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p>or (Equation 3)<br/></p>
+<p>O2 + R + R&#8242; RO + R&#8242;O (3)<br/></p>
+<p>where both oxygen atoms are incorporated into organic substrates.2,4&#8211;6<br/></p>
+<p>An important concept to remember in catalysis involving oxygen is that O2 is in the triplet <br/>state and its direct reaction with singlet organic molecules is spin-forbidden.5&#8211;7 <br/></p>
+<p>Metalloproteins such as P450s overcome this barrier by complexing the oxygen to a metal <br/>(iron), so that the metal-oxygen complex can react with carbon substrates, as well as some <br/>heteroatoms and even metals.8<br/></p>
+<p>The first reports of P450 were published in 1962 and 1964.9&#8211;11 Before that time, the <br/>concepts of dioxygenases and mixed-function oxidases had been established by Hayaishi, <br/>Mason, and others.4,12,13 The concept of generating oxygenated compounds by activated <br/>oxygen species was in contrast to earlier views by Wieland and others that these alcohols <br/>and other oxygenated chemicals were generated from the activation of carbon and <br/>subsequent reaction with water.6,12&#8211;14 The connection between P450 and mixed-function <br/>oxidation (of a steroid) was made later by Cooper et al.15 using photochemical action <br/>spectra; i.e. light reversal of inhibition of a hydroxylation reaction by carbon monoxide.<br/></p>
+<p>Subsequent work with bacterial and mammalian systems led to the purification of many <br/>P450s. Early proposals about the generation of mobile oxygen species and their roles16,17 <br/></p>
+<p>have been abandoned in favor of high-valent iron oxygen complexes that do the oxidation <br/>chemistry, overcoming the problem of spin-forbidden reaction of singlet (carbon) substrates <br/>with triplet oxygen and restricting the regioselectivity of the reaction to a specific site(s) on a <br/>substrate.2,5,6 The oxygenated forms of P450 enzymes have considerable similarity to those <br/>used by other iron-based monooxygenases and dioxygenases.6,18<br/></p>
+<p><b>Current Understanding<br/></b>The catalytic cycle shown in Scheme 1 is generally accepted for most P450- catalyzed <br/>oxidations. The intermediates between steps <b>4</b> and <b>8</b> are unstable and have been difficult to <br/>characterize. There is some ambiguity in the exact location of the electronic charge in these <br/>entities, and variations are seen in the literature, i.e. in the distribution of charge in the iron <br/>atom, the Fe-O bond, and the porphyrin ring.<br/></p>
+<p>Most P450 oxidations are considered to occur via Compound I, the formal FeO3+ entity <br/>shown in Scheme 1 (i.e., steps <b>7</b> and <b>8</b>), named because of its history in peroxidase <br/>chemistry.20 Much of our understanding of the catalysis came from work on biomimetic <br/>models; i.e. model metalloporphyrin oxide complexes.21,22 Compound I has been <br/>characterized in some bacterial P450s by Green and associates23&#8211;25 and by Makris and <br/>associates.26 Compound I abstracts a hydrogen atom from an alkyl group (e.g., methyl, <br/>methylene) yielding a carbon radical (step <b>7</b> in Scheme 1). The formal Fe-OH complex <br/>reacts rapidly with this radical to generate the product, often an alcohol, in a so-called <br/>&#8220;oxygen rebound&#8221; step (step <b>8</b> in Scheme 1). In cryo-annealing/&#947;-ray reduction studies by <br/></p>
+<p>Guengerich Page 3<br/></p>
+<p>ACS Catal. Author manuscript; available in PMC 2019 May 15.<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p>Hoffman and Sligar, it has been possible to characterize dioxygen intermediates of P450 <br/>101A1 (P450cam) and P450 11A1 by ENDDR spectroscopy and to document catalytic <br/>competence as judged by product formation.27&#8211;29<br/></p>
+<p>At this point it should be mentioned that many X-ray crystal structures are now available (&#8805; <br/>822 structures for &#8805; 146 different P450s currently in the Protein Data Bank, with 112 <br/>uploaded but not yet released as of the date of revision of this manuscript). These have <br/>generally similar folds but the size and shape of the active site vary considerably, yielding <br/>catalytic specificity among P450s.30 Most of the structures are of ferric enzymes, many with <br/>substrates or inhibitors present. Some structures of ferrous and ferrous-oxygen complexes of <br/>bacterial P450s 101A1 (P450cam) and 107A1 (P450eryF) are available (e.g., PDB 1DZ8, <br/>1T88, 2A1M, 2A1N, 2A1O, 1Z8O, 1Z8P, 1Z8Q)30&#8211;33<br/></p>
+<p>Not all P450 reactions are carbon hydroxylations, but Compound I is involved in these as <br/>well. Compound I has a high oxidation-reduction potential and, when in the proper position, <br/>can abstract electrons from amines34&#8211;36 and other relatively low potential reductants, e.g. <br/>certain strained alkanes and substituted aromatic ring systems.37,38 The abstraction of an <br/>electron from an amine is the initial step in many N-dealkylation reactions.19,34,39,40 With <br/>some of these amines and also carbon substrates, the carbon radical generated in step <b>7 <br/></b>(Scheme 1) can rearrange before step <b>8</b> occurs,41 even though the rebound reaction is <br/>generally fast. This competition between oxygen rebound and rearrangement can be <br/>&#8220;clocked&#8221; with strained alkanes having known rates of rearrangement in solution.42,43 Other <br/>competing reactions with Compound I are reduction to water44 and abstraction of a phenolic <br/>hydrogen atom from a (P450) tyrosyl group, which confounded early efforts to characterize <br/>Compound I.25,45&#8211;48<br/></p>
+<p>For more extensive lists of rearrangements and more unusual oxidation reactions catalyzed <br/>by P450s, see references 6, 8, 19, 49, 50. Most of these can be rationalized by mechanisms <br/>involving Compound I, with Compound 0 (Scheme 1) possibly involved in others.<br/></p>
+<p><b>Current Questions<br/>Compound I vs. Compound 0.<br/></b></p>
+<p>Compound 0 (formally FeIII-O2<br/>&#8722; or its protonated form) has been invoked in some P450 <br/></p>
+<p>reactions that have been difficult to explain with Compound I.8,19 The difficulty in <br/>discriminating between Compound 0 and Compound I derives from instability of these <br/>species and the transformation of Compound 0 to Compound I in the catalytic cycle <br/>(Scheme 1). Any effort to discern these by site-directed mutagenesis of a P450 has the <br/>caveat that other aspects (not only proton transfer) have been modified. Compound I is an <br/>inherently electrophilic species and (unprotonated) Compound 0 is nucleophilic. The use of <br/>&#8220;oxygen surrogates&#8221; can be useful, with appropriate caveats, e.g. iodosylbenzene (and alkyl <br/>hydroperoxides) can generate Compound I (or a closely-related structure51,52) but cannot <br/>produce the dioxygenated complex Compound 0 (Scheme 1).<br/></p>
+<p>One of the historically dominant pieces of evidence supporting a role for Compound 0 was <br/>18O2 labeling work with P450 19A1, in which one atom of 18O was reported to be <br/></p>
+<p>Guengerich Page 4<br/></p>
+<p>ACS Catal. Author manuscript; available in PMC 2019 May 15.<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p>incorporated in the product formic acid in the third and final step of the steroid aromatase <br/>reaction.53&#8211;55 Conclusions about the mechanism were extrapolated from this result to other <br/>P450 reactions.56 However, when the original experiments with P450 19A1 were repeated <br/>under more technically sophisticated conditions, no 18O incorporation was observed and the <br/>results are only consistent with a role for Compound I and not Compound 0.6,57<br/></p>
+<p>Another P450 C-C cleavage reaction, the periodate-like cleavage of 20,22- <br/>dihydroxycholesterol to two carbonyl products, is done by P450 11A1 Compound I, as <br/>demonstrated by a relatively high yield (~ 50%) of product formed by radiolytically-<br/>generated Compound I.29<br/></p>
+<p>The case of the P450 17A1-catalyzed cleavage of 17&#945;-hydroxy steroids (&#8220;lyase&#8221; reaction) is <br/>more problematic, in that the documented incorporation of one atom of 18O58 has been <br/>repeated52 but this result is not unambiguous regarding the mechanism. Raman spectral <br/>evidence for a Compound 0 species has been generated in the presence of substrate but this <br/>entity has not been shown to be catalytically competent (i.e., converted to product).59&#8211;61 <br/></p>
+<p>lodosylbenzene and 17&#945;-hydroperoxy steroids (oxygen surrogates) both yield the 19-carbon <br/>lyase reaction products,52,62 but the involvement of Compound 0 in the normal reaction <br/>cannot be ruled out.6<br/></p>
+<p>The purported roles of Compound 0 in other reactions remain to be investigated, e.g. <br/>lanosterol 14 &#945;-demethylation (P450 51 species)63 and the cleavage of nabumetone.64,65<br/></p>
+<p><b>Multiple States of Compound I.<br/></b>Theoretical calculations, primarily by Shaik and his associates, have largely discounted all <br/>potential oxygenated intermediates other than Compound I in the catalytic cycle (Scheme 1) <br/>as unable to be involved in P450 oxidations, including Compound 0 and Compound II <br/>(formally FeOH3+, following step <b>7</b> in Scheme 1).66 Theory has also led to the concept of <br/>&#8220;two-state reactivity,&#8221; i.e. the view that different forms of Compound I are involved in <br/>different reactions, even with a single substrate. This subject (which is too complex to fully <br/>consider here) is often approached in the context of &#8220;high-spin&#8221; and &#8220;low-spin&#8221; states of <br/>Compound I and their reactivity, but the possibilities for electronic distribution and multiple <br/>forms of Compound I are more complex. Shaik and associates use the term &#8220;chameleon <br/>nature&#8221; of Compound I, meaning that Compound I can change its character depending upon <br/>its environment. That is, the juxtaposition of a substrate in the enzyme can shift the balance <br/>of states of Compound I and affect the mechanism.66<br/></p>
+<p>The concept has attraction in explaining multiple reaction courses. For instance, epoxidation <br/>of aryl compounds is observed along with formation of phenols and ketones, but the epoxide <br/>does not necessarily form the products nor does a Meissenheimer complex necessariily form <br/>epoxides. Epoxidation of olefins is often accompanied by 1,2- shifts indicative of cationic <br/>intermediates (plus heme destruction).67&#8211;69 These sets of reactions have often been <br/>attributed to a single P450 intermediate that collapses in different ways (Scheme 2A)8,70 but <br/>the chameleon theory would suggest different electronic distributions of Compound I <br/>participating in formation of different products (Scheme 2B).<br/></p>
+<p>Guengerich Page 5<br/></p>
+<p>ACS Catal. Author manuscript; available in PMC 2019 May 15.<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p>This concept sounds very reasonable but unfortunately it is not very possible to prove <br/>experimentally (unless one considers more theoretical work experimental). The theoretical <br/>considerations are based largely on rationalization of prior experimental data, and <br/>development of new predictions that could distinguish among alternate mechanisms is <br/>difficult. In principle, the barrier to one reaction could be raised and the result observed, in <br/>terms of product redistribution (Scheme 2). However, the result could be explained by either <br/>(i) shifting the positioning of the substrate in the active site to favor one reaction (due to <br/>substrate motion) or (ii) to the ability of alternate forms of Compound I to do the reaction (at <br/>the same site in the protein). Although bond strength is one issue in influencing product <br/>reactivity (e.g., the preference of allylic sites for hydroxylation71), it is not the only one and <br/>examples of deficiencies in prediction are considered later (vide infra,).72<br/></p>
+<p>In the author&#8217;s opinion, these issues may ultimately be addressed experimentally in studies <br/>with artificially-generated Compound I (vide supra), in which detailed spectral analysis and <br/>product measurements are done.23&#8211;26,29<br/></p>
+<p><b>Open vs. Closed Structures.<br/></b>More crystal structures (&#8805; 119) of bacterial P450 101A1 (P450cam) are available than for any <br/>other P450. These structures, with the substrate camphor and other ligands (e.g., PDB 2CPP, <br/>7CPP, 1PHA, 1PHB, 1PHC, 5IK1), can be grouped into three conformational states: open, <br/>closed, and intermediate.30,73&#8211;76 The states involve differential movements of the F and G <br/>helices that cover the substrate binding channel. The studies support a view that this protein <br/>exists in a small set of distinct conformations, rather than a more continuous distribution of <br/>malleable, induced-fit states.76 How this paradigm applies to mammalian and other <br/>eukaryotic P450s is unknown, although there is considerable evidence that those enzymes <br/>also have at least open and closed conformations.30<br/></p>
+<p>One issue is the effect of the auxiliary protein putidaredoxin on the structure of P450cam. <br/>Putidaredoxin has long been known to be the immediate electron donor to P450cam,77 but it <br/>has also been known for many years to have an additional &#8220;effector&#8221; role in catalysis, in <br/>which it enhances product formation in a role separate from electron delivery.78 Although <br/>this role has been known since 1972,78 the exact mechanism has remained unclear. The <br/>general consensus is that oxidized putidaredoxin remains bound to the reduced P450 Fe2+O2 <br/>(or Fe3+-O2<br/></p>
+<p>&#8722;) complex long enough to alter its conformation and facilitate steps <b>5</b>&#8211;<b>8</b> of the <br/>catalytic cycle (Scheme 1). Several structural studies have provided contrasting answers to <br/>how this happens. A crystallographic study with a crosslinked P450cam-putidaredoxin <br/>complex indicated that P450cam was in the open form (with product bound),79 as did an <br/>independent double-electron-electron resonance (DEER) study with spin labels attached to <br/>P450cam.80 However, an NMR complex yielded an opposite result, i.e. a closed complex <br/>with P450cam.81<br/></p>
+<p>These studies leave questions open about the catalytic mechanism, and the exact relevance to <br/>most eukaryotic P450s is unknown. Further DEER studies on P450cam with different spin <br/>labels also show that oxidized putidaredoxin induces reduced P450cam to change to the open <br/>form.76 Carbon monoxide binding somehow prevents this shift. Further DEER <br/>measurements have indicated that putidaredoxin binds to the same site of P450cam in both <br/></p>
+<p>Guengerich Page 6<br/></p>
+<p>ACS Catal. Author manuscript; available in PMC 2019 May 15.<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p>the open and closed forms.82 Apparently this binding triggers the conformational change <br/>through rather subtle structural interactions.82 Exactly how this information is relevant to the <br/>human P450 redox partner interactions is still unclear (i.e., NADPH-P450 reductase and <br/>cytochrome b5 (b5) in the microsomal P450s and adrenodoxin in the mitochondrial P450s).<br/></p>
+<p><b>Desaturation.<br/></b>Numerous examples of P450-catalyzed desaturations are known, and the process does not <br/>involve dehydration of an alcohol product.8 In many cases, the desaturated product is minor <br/>relative to the alcohol, consistent with the view that a common intermediate (step <b>7</b>, Scheme <br/>1) leads to both.83&#8211;85 In several cases,86&#8211;90 including fish and human P450s,91,92 the major <br/>or only product is the desaturated product.<br/></p>
+<p>Presumably the reaction involves the abstraction of a second hydrogen atom in the FeOH3+ <br/></p>
+<p>radical intermediate (Schemes 1, 3). Whether this is actually a hydrogen atom abstraction or <br/>proton-coupled electron transfer is not clear. Site-directed mutagenesis work with (non-<br/>heme) iron-based fatty acid desaturases and the iron/&#945;- ketoglutarate dioxygenase AsqJ <br/>indicates that the balance between desaturation and hydroxylation is rather sensitive to <br/>minor changes,86,93&#8211;95 and P450s are probably similar in this regard (Scheme 3).<br/></p>
+<p><b>Processivity.<br/></b>Many P450 reactions involve multiple steps, i.e. a product of one reaction is a substrate for a <br/>subsequent reaction by the same enzyme. An issue is the degree to which the two reactions <br/>are &#8220;processive,&#8221; i.e. the extent to which the first product is released by the enzyme and must <br/>re-bind to generate the final product. If a reaction is not processive, it is &#8220;dissociative&#8221; <br/>(Scheme 4). The balance is not simply a matter of kinetic curiosity, but the coupling of <br/>reactions (i.e., degree of processivity) is an indication of whether a biological process is <br/>deterministic or stochastic. A more deterministic sequence of reactions may be important, in <br/>terms of biological function. The nature of the processivity can also be an issue when <br/>considering development of enzyme inhibitors.96,97<br/></p>
+<p>This issue has been investigated in several cases involving steroid oxidations.97&#8211;102 The <br/>design of such experiments is critical, and pre-steady-state kinetic approaches are necessary.<br/>103 Our own work led to the conclusion that the three steps in the P450 19A1 steroid <br/>aromatase reaction are distributive.102 Studies on animal and human P450 17A1 reactions <br/>(steroid 17&#945;-hydroxylation and subsequent C17 &#945;,20 cleavage (lyase reaction)) indicate <br/>partial processivity,97&#8211;101 although only in the case of the human P450 17A1 studies was the <br/>highly stimulatory protein b5 included.97<br/></p>
+<p>Pulse-chase experiments indicated that the P450 2E1-catalyzed oxidations of ethanol and <br/>N,N -diethylnitrosamine to acetic acid are both processive, with the latter being less <br/>processive than the oxidation of N,N-dimethylnitrosamine to formic acid (Scheme 4).105,106 <br/></p>
+<p>P450 2A6 also showed processivity in the same oxidation of the above two nitrosamines to <br/>1- and 2-carbon carboxylic acids.107 However, in these reactions the results were not fit to <br/>quantitative models with rate constants for both product dissociation and the second <br/></p>
+<p>Guengerich Page 7<br/></p>
+<p>ACS Catal. Author manuscript; available in PMC 2019 May 15.<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p>oxidation step. These situations have a dilemma in that there was no evidence for high-<br/>affinity binding of acetaldehyde or formaldehyde.<br/></p>
+<p>Other P450s known to catalyze sequential oxidations with endogenous chemicals include <br/>11A1, 11B1, 11B2, 24A1, 27A1, 46A1, and 51A1. Human P450s catalyzing sequential <br/>reactions with xenobiotics include 1A1, 1A2, 1B1, 2A6, 2A13, 2C9, 2E1, and 3A4.<br/></p>
+<p><b>Role of b5.<br/></b>b5 is a microsomal heme protein that has an electron transfer role in fatty acid desaturation <br/>and some other enzymatic reactions.2 In 1971, Estabrook and Hildebrandt108 postulated <br/>that b5 could be involved in P450 reactions in rat liver microsomes, on the basis of results of <br/>stimulation with the cofactor NADH, which only interacts poorly with NADPH-P450 <br/>reductase to reduce P450s but reduces NADH- b5 reductase and then b5. With the <br/>purification and reconstitution of P450s and b5, a number of results have been reported. <br/>Depending upon the system, investigators have reported either no effect, stimulation, or <br/>inhibition with the addition of b5.109&#8211;112 Even with a given P450, the results can vary <br/>depending upon the reaction under consideration.110,113<br/></p>
+<p>The original postulate was that b5 is transferring the second electron (to the Fe2+O2 (or Fe3+<br/></p>
+<p>&#8722;O2<br/>&#8722;) complex, step <b>4</b> in Scheme 1).108 However, with several P450s either apo-b5 (devoid <br/></p>
+<p>of heme) or Mn2+-substituted b5 can stimulate as well as holo-b5 (with the normal heme).<br/>114&#8211;117 A proposal that heme is transferred from the P450s to the apo-b5 during the course of <br/>enzyme reactions118 was shown to be untenable.119<br/></p>
+<p>At least four mechanisms for b5 stimulation have been proposed: (i) electron transfer (to the <br/>Fe2+O2 (or Fe3+&#8722;O2<br/></p>
+<p>&#8722;) complex, step <b>4</b>, Scheme 1); (ii) an allosteric effect that favors a more <br/>active conformation of the P450s; (iii) an effect of decreasing the abortive use of electrons to <br/>generate H2O2, avoiding uncoupling; and (iv) facilitating the protonation of the hydroperoxo <br/>intermediate (step <b>5</b> in Scheme 1). Waskell and colleagues have provided EPR evidence for <br/>the latter proposal in the case of rabbit P450 2B4-catalyzed d-benzphetamine N-<br/>demethylation,120 although this reaction is not strongly influenced by the presence of b5 <br/>under all conditions.110 Enhanced protonation of the peroxo complex would actually be <br/>inhibitory to the strong stimulation of the lyase activity of the P450 17A1 if the proposed <br/>nucleophilic Compound 0 mechanism58&#8211;61 is viable, in that decomposition to Compound I <br/>would be facilitated. Apo-b5 can stimulate reactions as well as b5 with several <br/>P450s114,117,119 but is ineffective with some P450 reactions,117,121&#8211;124 thus implicating <br/>electron transfer in those.<br/></p>
+<p>There are several experimental deficiencies in the b5 field. Clearly b5 must bind to P450s, as <br/>shown by NMR perturbation125 and crosslinking126 studies, but estimates of binding <br/>parameters have only been made in two cases, and then by surface plasmon resonance,<br/>127,128 which can be notoriously inaccurate due to surface artifacts.104 No crystal structures <br/>of b5:P450 complexes are known (other than computational). Also, kinetic investigations <br/>with b5 and high-valent P450 intermediates are limited because b5 must be preincubated <br/>with P450 in vesicles (i.e., unlike a ferredoxin it cannot be added quickly in a stopped-flow <br/>experiment). NMR investigations by Estrada and Scott125 also indicate that b5 and NADPH-<br/></p>
+<p>Guengerich Page 8<br/></p>
+<p>ACS Catal. Author manuscript; available in PMC 2019 May 15.<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p>P450 reductase compete for binding at the same site of P450 17A1, precluding some <br/>experimental kinetic designs (see also ref. 129).<br/></p>
+<p>To add to the complexity are in vivo transgenic mouse experiments.124,130 Conditional <br/>deletion of microsomal b5 in liver creates a liver b5-null mouse, but these mice develop and <br/>breed normally and have no overt phenotype. In liver microsomes prepared from these <br/>animals, NADH-mediated metabolism was essentially abolished for most substrates, and the <br/>NADPH-dependent metabolism of many substrates was reduced by 50&#8211;90%131 (the <br/>NADH-b5 reductase/b5-supported reduction of P450s can be reconstituted in vitro, despite <br/>the unfavorable redox potential of b5 for reducing ferric P450s (step <b>2</b> in Scheme 1)123,132). <br/>The results indicate that microsomal b5 can play a major role in the in vivo metabolism of <br/>certain drugs and chemicals but in a rather P450- and substrate-dependent manner.130 The <br/>extent to which metabolism was significantly affected by the (hepatic) absence of b5 is <br/>substrate-dependent.131 In mice treated with the carcinogen benzo[a]pyrene, in vivo DNA <br/>adduct levels were significantly higher (7-fold) in the livers of (liver) NADPH-P450 <br/>reductase knockout mice than wild-type mice.124 In the same study, no significant <br/>difference in DNA adduct formation was observed in liver between NADH-b5 reductase-null <br/>and wild-type mice. Thus, NADPH- P450 reductase and b5 both appear to modulate P450-<br/>mediated activation of benzo[a]pyrene in vitro but hepatic P450 enzymes appear to be more <br/>important for benzo[a]pyrene detoxication than its activation in vivo.<br/></p>
+<p><b>What are the Limits of P450 Catalysis?<br/></b>Recent work by Arnold and associates133&#8211;137 and also by the Fasan group138&#8211;145 has pushed <br/>the limits of what P450s&#8212;and other heme proteins&#8212;can do in the realm of catalysis. <br/>Arnold&#8217;s work in directed evolution, which was recognized by a share of the 2018 Nobel <br/>Prize in Chemistry, includes &#8805; 47 papers with P450s and their derivatives.<br/></p>
+<p>This area developed largely from work with bacterial P450 102A1 (P450bm3), which has <br/>advantages over most other P450s in that it is self-sufficient (i.e., it has a reductase domain <br/>that binds NADPH and delivers electrons to the heme domain, eliminating the need to co-<br/>express a separate reductase), high catalytic activity towards fatty acids (turnover number ~ <br/>200 s&#8722;1), and high expression levels.146 Directed evolution (or, more appropriately <br/>&#8220;molecular breeding&#8221;), with high throughput selection methods, was used to develop <br/>modified P450 102A1 catalysts that can catalyze various transformations of interest.137 <br/></p>
+<p>Some of the reactions involve drugs, and batteries of mutated P450 102A1 catalysts can be <br/>used to screen for their abilities to synthesize drug metabolites and new lead molecules.147<br/></p>
+<p>Further studies led to the ability to catalyze propane 1-hydroxylation, a dramatic departure <br/>from the classical &#969;&#8722;1, &#969;&#8722;2, &#8230; hydroxylation of fatty acids.148 Another development was <br/>the synthesis of anti-Markovnikov carbonyl products from styrenes by selected P450 102A1 <br/>mutants (Scheme 5A),135 although it should be noted that such reactions had been <br/>demonstrated earlier with rat P450 2B168 and with P450 biomimetic models.149<br/></p>
+<p>Further molecular breeding, incorporating random and site-directed mutagenesis and <br/>unnatural amino acid mutagenesis, has yielded P450-derived enzymes that can catalyze <br/>unusual reactions, e.g. cyclopropanation and nitrene transfer (Scheme 5B,5C).133,134,143 <br/></p>
+<p>Guengerich Page 9<br/></p>
+<p>ACS Catal. Author manuscript; available in PMC 2019 May 15.<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p>These reactions do not involve the normal P450 chemistry (Scheme 1), and Arnold&#8217;s group <br/>found that substitution of the conserved cysteine heme ligand by serine led to higher activity.<br/>137 These catalysts are no longer P450s, by definition (no thiolate ligand or classical FeII-<br/>CO spectrum) and have been termed P411 by Arnold.137,150 Nevertheless, some of these <br/>P411 variants are capable of highly stereoselective catalysis.134<br/></p>
+<p>The nitrene transfer mechanism (Scheme 6),144 with roots in earlier work by White151 and <br/>Dawson and Breslow,152 is rather unrelated to the normal catalytic cycle (Scheme 1). <br/>Consistent with the P411 catalysis, these reactions can also be catalyzed by myoglobin <br/>derivatives.140<br/></p>
+<p><b>Further Unresolved Issues<br/>Exactly How Does Structure Drive Function?<br/></b></p>
+<p>At least 822 P450 structures (from &gt; 146 P450s) are available in the Protein Data Bank, and <br/>a large fraction contain bound ligands. In many cases, the atom(s) on the substrate that is <br/>oxidized is positioned closest to the heme iron and, presumably, the oxygen of the FeO3+ <br/></p>
+<p>complex (Compound I). Such structures can explain many P450 reactions, and it is certainly <br/>easier to understand reactions with enzyme structures than without any.<br/></p>
+<p>However, there are some gaps in the field, aside from the difficulty in crystallizing some of <br/>the P450s. As pointed out earlier, there is a paucity of structures of complexes with <br/>accessory proteins. Examples are with ferredoxin-P450 fusion proteins, one a mitochondrial <br/>P450 (11A1)153 (PDB 3N9Y, 3NA1, 3N9Z, 3NA0, 4JWS, 4JWU, 4JX1, 3W9C) and two <br/>others with bacterial P450 101A1.79,154 The only other case involves the separated heme and <br/>flavin domains of bacterial P450 102A1 (1BVY).155<br/></p>
+<p>Another issue is that the structures can explain major sites of reaction, but structures <br/>explaining minor products are not generally seen due to the energetic differences in binding <br/>in the less favorable conformations. In this regard, the computational prediction software <br/>may even be more generally useful than structural models.<br/></p>
+<p>Another issue is that there are some examples of explaining natural human (or other) genetic <br/>variants at a structural level but not many (e.g., PDB 5X23, 5X24).156 For instance, it would <br/>be interesting (and useful) to understand why the human P450 2D6*53 variant has higher <br/>activity than wild-type P450 2D6.157 Two recent examples from our own group exemplify <br/>the problems. Zebrafish P450 17A1 and P450 17A2 both catalyze steroid 17&#945;-<br/>hydroxylations (progesterone and pregnenolone) but only P450 17A1 will catalyze the <br/>second (lyase) reaction, i.e., cleaving the C17-C20 bond (vide supra).158 However, the X-ray <br/>structure showed nearly identical active sites,158 and site-directed mutagenesis of all five <br/>possible perturbations (four near the heme periphery) did not impart lyase activity to P450 <br/>17A2.62 In the case of human P450 21A2, &gt; 100 single amino acid substitutions have been <br/>reported, with clinical deficiencies. Although having the structure of wild-type P450 21A2 is <br/>useful in understanding the low-activity variants,159&#8211;161 we have been unsuccessful in <br/>obtaining diffractable crystals of any of the variants.<br/></p>
+<p>Guengerich Page 10<br/></p>
+<p>ACS Catal. Author manuscript; available in PMC 2019 May 15.<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p>The difficulty of relating structure to function can be appreciated by considering the <br/>implications of the Eyring equation:<br/></p>
+<p><i>kobs </i>=<br/><i>kBT<br/></i></p>
+<p><i>h e<br/></i>&#8722; &#916;<i>G</i>&#177;<br/></p>
+<p><i>RT<br/></i>(4)<br/></p>
+<p>, in which a difference of 1.3 kcal mol&#8722;1, less than a typical single hydrogen bond, translates <br/>to a 10-fold difference in reaction rate at 37 &#176;C (KB is the Boltzmann constant, h is Planck&#8217;s <br/>constant, and T is the absolute temperature). Further, a free energy difference of 6.4 kcal mol<br/>&#8722;1 is associated with a 50,000-fold change in the rate. Thus, small differences in structure <br/>(binding) can lead to major changes in catalysis. This, of course, is an issue not only for <br/>P450s but for all efforts at understanding enzyme structure-function relationships.<br/></p>
+<p><b>Prediction of Catalysis.<br/></b>As mentioned earlier, structural models have the capability of understanding regioselectivity <br/>of oxidation reactions and even predicting sites with new ligands. The experience to date <br/>with AutoDock programs162,163 is not better than with programs such as MetaSite164&#8211;166 <br/></p>
+<p>that are based on past history with similar molecules, in the absence of structural constraints. <br/>Success rates of ~ 80% in predicting the top three sites of oxidation are reasonable and <br/>competitive with predictions by trained drug metabolism experts.167,168<br/></p>
+<p>There are still anomalies that would not be predicted. For instance, testosterone and the <br/>important androgenic derivative dihydrotestosterone differ only in a double bond and twists <br/>in the (steroid) A-ring. However, P450 3A4 hydroxylates testosterone at the 6&#946; position <br/>(plus lesser amounts of hydroxylation at the 2&#946;, 1&#946;, and 15&#946; positions)71,169 but <br/>dihydrotestosterone is hydroxylated primarily at the thermodynamically unfavored C18 <br/>methyl group.72<br/></p>
+<p>Another deficiency, especially in the field of drug metabolism, is that we do not really have <br/>the ability to predict rates of oxidation of compounds, even when we can predict sites. This <br/>can realistically only be done in situations where Hammett analysis (with substituted aryl <br/>groups)170,171 or some other well-defined linear free energy or another quantitative <br/>structural-activity paradigm can be applied. Beyond such cases we have limited predictably <br/>with new substrates, as well as with predicting the effects of most single-amino acid <br/>substitutions in P450s. As noted above, the problem can be appreciated when the Erying <br/>relationship is considered.<br/></p>
+<p><b>Multiple Conformations.<br/></b>One of the reasons why structural predictions are not better is the presence of multiple <br/>conformations of P450 proteins. There is considerable evidence for their existence, both <br/>from the structures of proteins bound to different ligands30,96,172 and from the existence of <br/>multiple crosspeaks in NMR spectra.173 In principle, NMR methods would be more useful <br/>in revealing multiple conformations but solving structures is formidable for such large <br/>proteins. Through-space spectroscopic methods such as fluorescence and EPR tagging are <br/></p>
+<p>Guengerich Page 11<br/></p>
+<p>ACS Catal. Author manuscript; available in PMC 2019 May 15.<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p>qualitatively useful but also deficient in revealing total individual structures (and necessarily <br/>require perturbation of the protein). Molecular dynamics simulations, although more <br/>theoretical than experimental, can also address questions about multiple configurations.<br/></p>
+<p>The existence of multiple conformations of P450s, or at the very least multiple docking <br/>models, is self-evident in considering multiplicity of reaction products from a single enzyme <br/>and substrate. There is also extensive evidence for substrate-induced conformational changes <br/>upon binding, as clearly evidenced in the crystal structures30 (and NMR <br/>measurements125,173).<br/></p>
+<p>One question is whether these changes involve induced fit or conformational selection <br/>models (Scheme 7), a general issue in enzymology.174 In the induced fit model, the binding <br/>of the substrate leads to a conformation change. In contrast, in the conformational selection <br/>model, multiple states of the unbound protein coexist, one of which has substrate <br/>complementarity and binds (Scheme 7). Which of the two mechanisms is dominant with <br/>P450s is unclear, although some of our own kinetic studies with P450 3A4 led to a <br/>preference for an induced fit model.175 The two phenomena are not mutually exclusive, and <br/>we have utilized two forms of both free and bound P450 to obtain fits of ligand binding <br/>kinetic data.97,102,175,176 However, the improved fitting seen with adding more steps may be <br/>misleading, in that the most minimal kinetic models are generally the safest even if not the <br/>most complete.103<br/></p>
+<p>We have explored the effects of substrate binding on circular dichroism spectra. However, <br/>any changes seen are probably too weak to be useful, in that changes in helicity are needed.<br/></p>
+<p>Another anomaly of substrate binding is the slow changes in heme perturbation spectra seen <br/>with some P450s. Bacterial P450 101A1 binds its substrate (camphor) rapidly (k= 106 M&#8722;1s<br/>&#8722;1)177 and so do several human P450s.102,121,122,159 However, under the same conditions <br/>several mammalian P450s show slow changes in heme perturbation spectra upon mixing <br/>with substrate.92,175,176,178,179 In some cases the rates of initial contact of the substrate/<br/>ligand with the P450 has been shown to be fast, as judged by fluorescence kinetics of <br/>interaction of ligands with the protein.102,175,179 The slow heme perturbation results are <br/>currently rationalized in models that involve diffusion- limited encounters of a substrate with <br/>a ligand followed by conformational changes and &#8220;worming&#8221; of the ligand into the active <br/>site, moving near the heme iron.179 However, it is presently unclear why some P450s exhibit <br/>such behavior and others do not, as well as whether an induced fit or a conformational <br/>selection model is more relevant.<br/></p>
+<p><b>Conclusions<br/></b>P450 is a mature field, in that the basic catalytic mechanism is understood in the context of <br/>electronic changes leading to oxygen activation and the oxidation of a substrate (Scheme 1). <br/>Questions still exist about some of the electronics of Compound I and possibly other active <br/>species. More questions abound about the role of the protein structure in driving catalytic <br/>selectivity, including internal motion and conformational changes. Prediction of altered <br/></p>
+<p>Guengerich Page 12<br/></p>
+<p>ACS Catal. Author manuscript; available in PMC 2019 May 15.<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p>catalytic activity due to small changes is problematic. Finally, there is a paucity of detailed <br/>information about interactions with accessory proteins.<br/></p>
+<p><b>Acknowledgments.<br/></b>The author thanks Drs. F. K. Yoshimoto and M. J. Reddish for helpful comments and K. Trisler for assistance in <br/>preparation of the manuscript.<br/></p>
+<p>(Grant support). This work was supported in part by National Institutes of Health Grant R01 GM118122.<br/></p>
+<p><b>References<br/></b>(1). Fisher HF; Conn EE; Vennesland B; Westheimer FH The Enzymatic Transfer of Hydrogen. I. The <br/></p>
+<p>Reaction Catalyzed by Alcohol Dehydrogenase. J Biol. Chem 1953, 202, 687&#8211;697. [PubMed: <br/>13061492] <br/></p>
+<p>(2). Walsh C Enzymatic Reaction Mechanisms, W. H. Freeman Co: San Francisco, 1979.<br/>(3). Rendic S; Guengerich FP Survey of Human Oxidoreductases and Cytochrome P450 Enzymes <br/></p>
+<p>Involved in the Metabolism of Xenobiotic and Natural Chemicals. Chem. Res. Toxicol 2015, 28, <br/>38&#8211;42. [PubMed: 25485457] <br/></p>
+<p>(4). Hayaishi O; Katagiri M; Rothberg S Studies on Oxygenases; Pyrocatechase. J Bio. Chem 1957, <br/>229, 905&#8211;920. [PubMed: 13502352] <br/></p>
+<p>(5). Bugg TDH Dioxygenase Enzymes: Catalytic Mechanisms and Chemical Models. Tetrahedron <br/>2003, 59, 7075&#8211;7101.<br/></p>
+<p>(6). Guengerich FP; Yoshimoto FK Formation and Cleavage of C-C Bonds by Enzymatic Oxidation-<br/>Reduction Reactions. Chem. Rev 2018, 118, 6573&#8211;6655. [PubMed: 29932643] <br/></p>
+<p>(7). Hernandez-Ortega A; Quesne MG; Bui S; Heyes DJ; Steiner RA; Scrutton NS; de Visser SP <br/>Catalytic Mechanism of Cofactor-Free Dioxygenases and How They Circumvent Spin-Forbidden <br/>Oxygenation of Their Substrates. J Am. Chem. Soc 2015, 137, 7474&#8211;7487. [PubMed: 25988744] <br/></p>
+<p>(8). Guengerich FP Common and Uncommon Cytochrome P450 Reactions Related to Metabolism and <br/>Chemical Toxicity. Chem. Res. Toxicol 2001, 14, 611&#8211;650. [PubMed: 11409933] <br/></p>
+<p>(9). Omura T; Sato R A New Cytochrome in Liver Microsomes. J Bio. Chem 1962, 237; 1375&#8211;1376. <br/>[PubMed: 14482007] <br/></p>
+<p>(10). Omura T; Sato R The Carbon Monoxide-Binding Pigment of Liver Microsomes.Evidence for Its <br/>Hemoprotein Nature. J Bio. Chem 1964, 239, 2370&#8211;2378. [PubMed: 14209971] <br/></p>
+<p>(11). Omura T; Sato R The Carbon Monoxide-Binding Pigment of Liver Microsomes. Solubilization, <br/>Purification, and Properties. J Biol. Chem 1964, 239, 2379&#8211;2385. [PubMed: 14209972] <br/></p>
+<p>(12). Hayaishi O; Hashimoto K Pyrocatecase. A New Enzyme Catalizing Oxidative Breakdown of <br/>Pyrocatechin. J Biochem. (Tokyo) 1950, 37, 371&#8211;374.<br/></p>
+<p>(13). Mason HS Mechanisms of Oxygen Metabolism. Science 1957, 125, 1185&#8211;1190. [PubMed: <br/>13432780] <br/></p>
+<p>(14). Witkop B Remembering Heinrich Wieland (1877&#8211;1957). Portrait of an Organic Chemist and <br/>Founder of Modern Biochemistry. Med. Res. Rev 1992, 12, 195&#8211;274. [PubMed: 1578969] <br/></p>
+<p>(15). Cooper DY; Levine S; Narasimhulu S; Rosenthal O; Estabrook RW Photochemical Action <br/>Spectrum of the Terminal Oxidase of Mixed Function Oxidase Systems. Science 1965, 147, 400&#8211;<br/>402. [PubMed: 14221486] <br/></p>
+<p>(16). Hamilton GA Oxidation by Molecular Oxygen. I. Reactions of a Possible Model System for <br/>Mixed-Function Oxidases. J Am. Chem. Soc 1964, 86, 3391&#8211;3392.<br/></p>
+<p>(17). Strobel HW; Coon MJ Effect of Superoxide Generation and Dismutation on Hydroxylation <br/>Reactions Catalyzed by Liver Microsomal Cytochrome P-450. J Biol. Chem 1971, 246, 7826&#8211;<br/>7829. [PubMed: 4400080] <br/></p>
+<p>(18). Martinez S; Hausinger RP Catalytic Mechanisms of FeII- and 2-Oxoglutarate- Dependent <br/>Oxygenases. J Bio. Chem 2015, 290, 20702&#8211;20711. [PubMed: 26152721] <br/></p>
+<p>Guengerich Page 13<br/></p>
+<p>ACS Catal. Author manuscript; available in PMC 2019 May 15.<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p>(19). Ortiz de Montellano PR Substrate Oxidation. In Cytochrome P450: Structure, Mechanism, and <br/>Biochemistry, 4th ed; Ortiz de Montellano PR, Ed.; Springer: New York, 2015, pp 111&#8211;176.<br/></p>
+<p>(20). Theorell H; Ehrenberg A; Chance B Electronic Structure of the Peroxidase- Peroxide Complexes. <br/>Arch. Biochem. Biophys 1952, 37, 237&#8211;239. [PubMed: 14953434] <br/></p>
+<p>(21). Groves JT; Nemo TE; Myers RS Hydroxylation and Epoxidation Catalyzed by Iron-Porphine <br/>Complexes. Oxygen Transfer from Iodosylbenzene. J Am. Chem. Soc 1979, 101, 1032&#8211;1033.<br/></p>
+<p>(22). Groves JT Models and Mechanisms of Cytochrome P450 Action. In Cytochrome P450: <br/>Structure, Mechanism, and Biochemistry, 3rd ed; Ortiz de Montellano PR, Ed.; Kluwer <br/>Academic/Plenum Publishers: New York, 2005, pp 1&#8211;43.<br/></p>
+<p>(23). Yosca TH; Rittle J; Krest CM; Onderko EL; Silakov A; Calixto JC; Behan RK; Green MT <br/>Iron(IV) hydroxide pKa and the Role of Thiolate Ligation in C-H Oxidation by Cytochrome <br/>P450. Scene 2013, 342, 825&#8211;829.<br/></p>
+<p>(24). Krest CM; Onderko EL; Yosca TH; Calixto JC; Karp RF; Livada J; Rittle J; Green MT Reactive <br/>Intermediates in Cytochrome P450 Catalysis. J Biol. Chem 2013, 288, 17074&#8211;17081. [PubMed: <br/>23632017] <br/></p>
+<p>(25). Rittle J; Green MT Cytochrome P450 Compound I: Capture, Characterization, and C-H Bond <br/>Activation Kinetics. Science 2010, 330, 933&#8211;937.d [PubMed: 21071661] <br/></p>
+<p>(26). Grant JL; Hsieh CH; Makris TM Decarboxylation of Fatty Acids to Terminal Alkenes by <br/>Cytochrome P450 Compound I. J Am. Chem. Soc 2015, 137, 4940&#8211;4943. [PubMed: 25843451] <br/></p>
+<p>(27). Davydov R; Makris TM; Kofman V; Werst DE; Sligar SG; Hoffman BM Hydroxylation of <br/>Camphor by Reduced Oxy-Cytochrome P450cam: Mechanistic Implications of EPR and ENDOR <br/>Studies of Catalytic Intermediates in Native and Mutant Enzymes. J Am. Chem. Soc 2001, 123, <br/>1403&#8211;1415. [PubMed: 11456714] <br/></p>
+<p>(28). Davydov R; Gilep AA; Strushkevich NV; Usanov SA; Hoffman BM Compound I Is the Reactive <br/>Intermediate in the First Monooxygenation Step during Conversion of Cholesterol to <br/>Pregnenolone by Cytochrome P450scc: EPR/ENDOR/Cryoreduction/Annealing Studies. J Am. <br/>Chem. Soc 2012, 134, 17149&#8211;17156. [PubMed: 23039857] <br/></p>
+<p>(29). Davydov R; Strushkevich N; Smil D; Yantsevich A; Gilep A; Usanov S; Hoffman BM Evidence <br/>That Compound I Is the Active Species in Both the Hydroxylase and Lyase Steps by which <br/>P450scc Converts Cholesterol to Pregnenolone: EPR/ENDOR/Cryoreduction/Annealing Studies. <br/>Biochemistry 2015, 54, 7089&#8211;7097. [PubMed: 26603348] <br/></p>
+<p>(30). Poulos TL; Johnson EF Structures of Cytochrome P450 Enzymes. In Cytochrome P450: <br/>Structure, Function, and Biochemistry, Ortiz de Montellano PR, Ed.; Springer: New York, 2015, <br/>pp 3&#8211;32.<br/></p>
+<p>(31). Schlichting I; Berendzen J; Chu K; Stock AM; Maves SA; Benson DE; Sweet BM; Ringe D; <br/>Petsko GA; Sligar SG The Catalytic Pathway of Cytochrome P450cam at Atomic Resolution. <br/>Science 2000, 287, 1615&#8211;1622. [PubMed: 10698731] <br/></p>
+<p>(32). Nagano S; Cupp-Vickery JR; Poulos TL Crystal Structures of the Ferrous Dioxygen Complex of <br/>Wild-Type Cytochrome P450eryF and Its Mutants, A245S and A245T: Investigation of the <br/>Proton Transfer System in P450eryF. J Bioi. Chem 2005, 280, 22102&#8211;22107.d<br/></p>
+<p>(33). Nagano S; Poulos TL Crystallographic Study on the Dioxygen Complex of Wild-type and Mutant <br/>Cytochrome P450cam. Implications for the Dioxygen Activation Mechanism. J Bioi. Chem 2005, <br/>280, 31659&#8211;31663.<br/></p>
+<p>(34). Augusto O; Beilan HS; Ortiz de Montellano PR The Catalytic Mechanism of Cytochrome P-450: <br/>Spin-Trapping Evidence for One-Electron Substrate Oxidation. J Biol. Chem 1982, 257, 11288&#8211;<br/>11295. [PubMed: 6288676] <br/></p>
+<p>(35). Macdonald TL; Zirvi K; Burka LT; Peyman P; Guengerich FP Mechanism of Cytochrome P-450 <br/>Inhibition by Cyclopropylamines. J Am. Chem. Soc 1982, 104, 2050&#8211;2052.<br/></p>
+<p>(36). Guengerich FP; Yun CH; Macdonald TL Evidence for a 1-Electron Oxidation Mechanism in A-<br/>Dealkylation of N,N-Dialkylanilines by Cytochrome P450 2B1. Kinetic Hydrogen Isotope <br/>Effects, Linear Free Energy Relationships, Comparisons with Horseradish Peroxidase, and <br/>Studies with Oxygen Surrogates. J Biol. Chem 1996, 271, 27321&#8211;27329. [PubMed: 8910308] <br/></p>
+<p>(37). Stearns RA; Ortiz de Montellano PR Cytochrome P-450 Catalyzed Oxidation of Quadricyclane. <br/>Evidence for a Radical Cation Intermediate. J Am. Chem. Soc 1985, 107, 4081&#8211;4082.<br/></p>
+<p>Guengerich Page 14<br/></p>
+<p>ACS Catal. Author manuscript; available in PMC 2019 May 15.<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p>(38). Sato H; Guengerich FP Oxidation of 1,2,4,5-Tetramethoxybenzene to a Cation Radical by <br/>Cytochrome P450. J Am. Chem. Soc 2000, 122, 8099&#8211;8100.<br/></p>
+<p>(39). Bondon A; Macdonald TL; Harris TM; Guengerich FP Oxidation of Cycloalkylamines by <br/>Cytochrome P-450. Mechanism-based Inactivation, Adduct Formation, Ring Expansion, and <br/>Nitrone Formation. J Biol. Chem 1989, 264, 1988&#8211;1997. [PubMed: 2914890] <br/></p>
+<p>(40). Macdonald TL; Gutheim WG; Martin RB; Guengerich FP Oxidation of Substituted N,N-<br/>Dimethylanilines by Cytochrome P-450: Estimation of the Effective Oxidation-Reduction <br/>Potential of Cytochrome P-450. Biochemistry 1989, 28, 2071&#8211;2077. [PubMed: 2497774] <br/></p>
+<p>(41). Groves JT; McClusky GA; White RE; Coon MJ Aliphatic Hydroxylation by Highly Purified <br/>Liver Microsomal Cytochrome P-450: Evidence for a Carbon Radical Intermediate. Biochem. <br/>Biophys. Res. Commun 1978, 81, 154&#8211;160. [PubMed: 656092] <br/></p>
+<p>(42). Frey PA Radicals in Enzymatic Reactions. Curr. Opin. Chem Biol 1997, 1, 347&#8211;356. [PubMed: <br/>9667872] <br/></p>
+<p>(43). Auclair K; Hu Z; Little DM; Ortiz de Montellano PR; Groves JT Revisiting the Mechanism of <br/>P450 Enzymes with the Radical Clocks Norcarane and Spiro[2,5]octane. J Am. Chem. Soc 2002, <br/>124, 6020&#8211;6027. [PubMed: 12022835] <br/></p>
+<p>(44). Gorsky LD; Koop DR; Coon MJ On the Stoichiometry of the Oxidase and Monooxygenase <br/>Reactions Catalyzed by Liver Microsomal Cytochrome P-450: Products of Oxygen Reduction. J <br/>Biol. Chem 1984, 259, 6812&#8211;6817. [PubMed: 6725272] <br/></p>
+<p>(45). Jung C; Schunemann V; Lendzian F; Trautwein AX; Contzen J; Galander M; Bottger LH; Richter <br/>M; Barra AL Spectroscopic Characterization of the Iron-oxo Intermediate in Cytochrome P450. <br/>Biol. Chem 2005, 386, 1043&#8211;1053. [PubMed: 16218876] <br/></p>
+<p>(46). Newcomb M; Zhang R; Chandrasena RE; Halgrimson JA; Horner JH; Makris TM; Sligar SG <br/>Cytochrome P450 Compound I. J Am. Chem. Soc 2006, 128, 4580&#8211;4581. [PubMed: 16594688] <br/></p>
+<p>(47). Kellner DG; Hung SC; Weiss KE; Sligar SG Kinetic Characterization of Compound I Formation <br/>in the Thermostable Cytochrome P450 CYP119. J Biol. Chem 2002, 277, 9641&#8211;9644. [PubMed: <br/>11799104] <br/></p>
+<p>(48). Jung C; de Vries S; Schunemann V Spectroscopic Characterization of Cytochrome P450 <br/>Compound I. Arch. Biochem. Biophys 2011, 507, 44&#8211;55. [PubMed: 21195047] <br/></p>
+<p>(49). Isin EM; Guengerich FP Complex Reactions Catalyzed by Cytochrome P450 Enzymes. Biochim. <br/>Biophys. Acta 2007, 1770, 314&#8211;329. [PubMed: 17239540] <br/></p>
+<p>(50). Guengerich FP; Isin EM Unusual Metabolic Reactions and Pathways. In Handbook of Metabolic <br/>Pathways of Xenobiotics, Lee P; Aizawa H; Gau L; Prakash C; Zhong D, Eds.; John Wiley &amp; <br/>Sons: Chichester, UK, 2014; Vol 1, pp 147&#8211;197.<br/></p>
+<p>(51). Ortiz de Montellano PR Oxygen Activation and Reactivity. In Cytochrome P450: Structure, <br/>Mechanism, and Biochemistry, 2nd ed; Ortiz de Montellano PR, Ed.; Plenum Press: New York, <br/>1995, pp 245&#8211;303.<br/></p>
+<p>(52). Yoshimoto FK; Gonzalez E; Auchus RJ; Guengerich FP Mechanism of 17&#945;,20-Lyase and New <br/>Hydroxylation Reactions of Human Cytochrome P450 17A1: 18O Labeling and Oxygen <br/>Surrogate Evidence for a Role of a Perferryl Oxygen. J. Bioi. Chem 2016, 291, 17143&#8211;17164.<br/></p>
+<p>(53). Akhtar M; Corina D; Pratt J; Smith T Studies on the Removal of C-19 in Oestrogen Biosynthesis <br/>using 18O2. J. Chem. Soc, Chem. Commun 1976, 854&#8211;856.<br/></p>
+<p>(54). Akhtar M; Calder MR; Corina DL; Wright JN Mechanistic Studies on C-19 Demethylation in <br/>Oestrogen Biosynthesis. Biochem. J 1982, 201, 569&#8211;580. [PubMed: 7092812] <br/></p>
+<p>(55). Caspi E; Arunachalam T; Nelson PA Biosynthesis of Estrogens: Aromatization of (19R)-, (19S)-, <br/>and (19S)-[19&#8211;3H,2H,1H]-3&#946;-Hydroxyandrost-5- en-17-ones by Human Placental Aromatase. J <br/>Am. Chem. Soc 1986, 108, 1847&#8211;1852.<br/></p>
+<p>(56). Akhtar M; Lee-Robichaud P; Akhtar ME; Wright JN The Impact of Aromatase Mechanism on <br/>Other P450s. J Steroid Biochem. Mol. Biol 1997, 61, 127&#8211;132. [PubMed: 9365181] <br/></p>
+<p>(57). Yoshimoto FK; Guengerich FP Mechanism of the Third Oxidative Step in the Conversion of <br/>Androgens to Estrogens by Cytochrome P450 19A1 Steroid Aromatase. J Am. Chem. Soc 2014, <br/>136, 15016&#8211;15025. [PubMed: 25252141] <br/></p>
+<p>Guengerich Page 15<br/></p>
+<p>ACS Catal. Author manuscript; available in PMC 2019 May 15.<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p>(58). Akhtar M; Corina D; Miller S; Shyadehi AZ; Wright JN Mechanism of the Acyl-carbon Cleavage <br/>and Related Reactions Catalyzed by Multifunctional P- 450s: Studies on Cytochrome P45017a. <br/>Biochemistry 1994, 33, 4410&#8211;4418. [PubMed: 8155659] <br/></p>
+<p>(59). Mak PJ; Gregory MC; Denisov IG; Sligar SG; Kincaid JR Unveiling the Crucial Intermediates in <br/>Androgen Production. Proc. Natl. Acad. Sci. U S. A 2015, 112, 15856&#8211;15861. [PubMed: <br/>26668369] <br/></p>
+<p>(60). Gregory M; Mak PJ; Sligar SG; Kincaid JR Differential Hydrogen Bonding in Human CYP17 <br/>Dictates Hydroxylation Versus Lyase Chemistry. Angew. Chem. Int. Ed 2013, 52, 5342&#8211;5345.<br/></p>
+<p>(61). Mak PJ; Duggal R; Denisov IG; Gregory MC; Sligar SG; Kincaid JR Human Cytochrome <br/>CYP17A1: The Structural Basis for Compromised Lyase Activity with 17-Hydroxyprogesterone. <br/>J Am. Chem. Soc 2018, 140, 7324&#8211;7331. [PubMed: 29758981] <br/></p>
+<p>(62). Gonzalez E; Johnson KM; Pallan PS; Phan TTN; Zhang W; Lei L; Wawrzak Z; Yoshimoto FK; <br/>Egli M; Guengerich FP Inherent Steroid 17 &#945;,20-Lyase Activity in Defunct Cytochrome P450 <br/>17A Enzymes. J Biol. Chem 2018, 293, 541&#8211;556. [PubMed: 29212707] <br/></p>
+<p>(63). Shyadehi AZ; Lamb DC; Kelly SL; Kelly DE; Schunck WH; Wright JN; Corina D; Akhtar M <br/>Mechanism of the Acyl-carbon bond Cleavage Reaction Catalyzed by Recombinant Sterol 14 &#945; -<br/>Demethylase of Candida albicans (Other Names Are: Lanosterol 14 &#945; -Demethylase, <br/>P-45014dm, and CYP51). J Biol. Chem 1996, 271, 12445&#8211;12450. [PubMed: 8647850] <br/></p>
+<p>(64). Guengerich FP; Munro AW Unusual Cytochrome P450 Enzymes and Reactions. J Biol. Chem <br/>2013, 288, 17065&#8211;17073. [PubMed: 23632016] <br/></p>
+<p>(65). Varfaj F; Zulkifli SNA; Park H-G; Challinor VL; De Voss JJ; Ortiz de Montellano PR Carbon-<br/>Carbon Bond Cleavage in Activation of the Prodrug Nabumetone. Drug Metab. Dispos 2014, 42, <br/>828&#8211;838. [PubMed: 24584631] <br/></p>
+<p>(66). Shaik S; Cohen S; Wang Y; Chen H; Kumar D; Thiel W P450 Enzymes: Their Structure, <br/>Reactivity, and Selectivity-Modeled by QM/MM Calculations. Chem. Rev 2010, 110, 949&#8211;1017. <br/>[PubMed: 19813749] <br/></p>
+<p>(67). Miller RE; Guengerich FP Oxidation of Trichloroethylene by Liver Microsomal Cytochrome <br/>P-450: Evidence for Chlorine Migration in a Transition State Not Involving Trichloroethylene <br/>Oxide. Biochemistry 1982, 21, 1090&#8211;1097. [PubMed: 7074051] <br/></p>
+<p>(68). Liebler DC; Guengerich FP Olefin Oxidation by Cytochrome P-450: Evidence for Group <br/>Migration in Catalytic Intermediates Formed with Vinylidene Chloride and trans-1-Phenyl-1-<br/>butene. Biochemistry 1983, 22, 5482&#8211;5489. [PubMed: 6652073] <br/></p>
+<p>(69). Ortiz de Montellano PR; Mangold BLK; Wheeler C; Kunze KL; Reich NO Stereochemistry of <br/>Cytochrome P-450-Catalyzed Epoxidation and Prosthetic Heme Alkylation. J Biol. Chem 1983, <br/>258, 4208&#8211;4213. [PubMed: 6833253] <br/></p>
+<p>(70). Guengerich FP; Macdonald TL Chemical Mechanisms of Catalysis by Cytochromes P-450: A <br/>Unified View. Acct. Chem. Res 1984, 17, 9&#8211;16.<br/></p>
+<p>(71). Krauser JA; Guengerich FP Cytochrome P450 3A4-Catalyzed Testosterone 6&#946;-Hydroxylation <br/>Stereochemistry, Kinetic Deuterium Isotope Effects, and Rate- limiting Steps. J Biol. Chem 2005, <br/>280, 19496&#8211;19506. [PubMed: 15772082] <br/></p>
+<p>(72). Cheng Q; Sohl CD; Yoshimoto FK; Guengerich FP Oxidation of Dihydrotestosterone by Human <br/>Cytochromes P450 19A1 and 3A4. J Bioi. Chem 2012, 287, 29554&#8211;29567.<br/></p>
+<p>(73). Poulos TL; Finzel BC; Howard AJ High-resolution Crystal Structure of Cytochrome P450cam. J <br/>Moi. Bioi 1987, 195, 687&#8211;700.<br/></p>
+<p>(74). Raag R; Poulos TL Crystal Structure of the Carbon Monoxide-Substrate- Cytochrome <br/>P-450CAM Ternary Complex. Biochemistry 1989, 28, 7586&#8211;7592. [PubMed: 2611203] <br/></p>
+<p>(75). Raag R; Li H; Jones BC; Poulos TL Inhibitor-induced Conformational Change in Cytochrome <br/>P-450 CAM. Biochemistry 1993, 32, 4571&#8211;4578. [PubMed: 8485133] <br/></p>
+<p>(76). Liou SH; Mahomed M; Lee YT; Goodin DB Effector Roles of Putidaredoxin on Cytochrome <br/>P450cam Conformational States. J Am. Chem. Soc 2016, 138, 10163&#8211;10172. [PubMed: <br/>27452076] <br/></p>
+<p>(77). Conrad HE; Lieb K; Gunsalus IC Mixed Function Oxidation. 3. An Electron Transport Complex <br/>in Camphor Ketolactonization. J Biol. Chem 1965, 240, 4029&#8211;4037. [PubMed: 4284716] <br/></p>
+<p>Guengerich Page 16<br/></p>
+<p>ACS Catal. Author manuscript; available in PMC 2019 May 15.<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p>(78). Tyson CA; Lipscomb JD; Gunsalus IC The Roles of Putidaredoxin and P450cam in Methylene <br/>Hydroxylation. J Biol. Chem 1972, 247, 5777&#8211;5784. [PubMed: 4341491] <br/></p>
+<p>(79). Tripathi S; Li H; Poulos TL Structural Basis for Effector Control and Redox Partner Recognition <br/>in Cytochrome P450. Science 2013, 340, 1227&#8211;1230. [PubMed: 23744947] <br/></p>
+<p>(80). Myers WK; Lee YT; Britt RD; Goodin DB The Conformation of P450cam in Complex with <br/>Putidaredoxin Is Dependent on Oxidation State. J Am. Chem. Soc 2013, 135, 11732&#8211;11735. <br/>[PubMed: 23901883] <br/></p>
+<p>(81). Skinner SP; Liu W-M; Hiruma Y; Timmer M; Blok A; Hass MAS; Ubbink M Delicate <br/>Conformational Balance of the Redox Enzyme Cytochrome P450cam. Proc. Nall. Acad. Sci. U. <br/>S. A 2015, 112, 9022&#8211;9027.<br/></p>
+<p>(82). Liou SH; Myers WK; Oswald JD; Britt RD; Goodin DB Putidaredoxin Binds to the Same Site on <br/>Cytochrome P450cam in the Open and Closed Conformation. Biochemistry 2017, 56, 4371&#8211;<br/>4378. [PubMed: 28741929] <br/></p>
+<p>(83). Rettie AE; Rettenmeier AW; Howald WN; Baillie TA Cytochrome P-450 Catalyzed Formation of <br/>&#948;4-VPA, a Toxic Metabolite of Valproic Acid. Science 1987, 235, 890&#8211;893. [PubMed: 3101178] <br/></p>
+<p>(84). Wang RW; Kari PH; Lu AY; Thomas PE; Guengerich FP; Vyas KP Biotransformation of <br/>Lovastatin. IV. Identification of Cytochrome P450 3A Proteins as the Major Enzymes <br/>Responsible for the Oxidative Metabolism of Lovastatin in Rat and Human Liver Microsomes. <br/>Arch. Biochem. Biophys 1991, 290, 355&#8211;361. [PubMed: 1929403] <br/></p>
+<p>(85). Guengerich FP; Kim DH Enzymatic Oxidation of Ethyl Carbamate to Vinyl Carbamate and Its <br/>Role as an Intermediate in the Formation of 1,N6 Ethenoadenosine. Chem. Res. Toxicol 1991, 4, <br/>413&#8211;421. [PubMed: 1912327] <br/></p>
+<p>(86). Cooper HLR; Mishra G; Huang XY; Pender-Cudlip M; Austin RN; Shanklin J; Groves JT <br/>Parallel and Competitive Pathways for Substrate Desaturation, Hydroxylation, and Radical <br/>Rearrangement by the Non-heme Diiron Hydroxylase AlkB. J Am. Chem. Soc 2012, 134, <br/>20365&#8211;20375. [PubMed: 23157204] <br/></p>
+<p>(87). Morikawa T; Mizutani M; Aoki N; Watanabe B; Saga H; Saito S; Oikawa A; Suzuki H; Sakurai <br/>N; Shibata D et al. Cytochrome P450 CYP710A encodes the sterol C-22 Desaturase in <br/>Arabidopsis and Tomato. Plant Cell 2006, 18, 1008&#8211;1022. [PubMed: 16531502] <br/></p>
+<p>(88). Arnqvist L; Persson M; Jonsson L; Dutta PC; Sitbon F Overexpression of CYP710A1 and <br/>CYP710A4 in Transgenic Arabidopsis Plants Increases the Level of Stigmasterol at the Expense <br/>of Sitosterol. Planta 2008, 227, 309&#8211;317. [PubMed: 17909855] <br/></p>
+<p>(89). Skaggs BA; Alexander JF; Pierson CA; Schweitzer KS; Chun KT; Koegel C; Barbuch R; Bard M <br/>Cloning and characterization of the Saccharomyces cerevisiae C-22 Sterol Desaturase Gene, <br/>Encoding a Second Cytochrome P-450 Involved in Ergosterol Biosynthesis. Gene 1996, 169, <br/>105&#8211;109. [PubMed: 8635732] <br/></p>
+<p>(90). Kelly SL; Lamb DC; Baldwin BC; Corran AJ; Kelly DE Characterization of Saccharomyces <br/>cerevisiae CYP61, Sterol &#916;22-Desaturase, and Inhibition by Azole Antifungal Agents. J Biol. <br/>Chem 1997, 272, 9986&#8211;9988. [PubMed: 9092539] <br/></p>
+<p>(91). Kramlinger VM; Nagy LD; Fujiwara R; Johnson KM; Phan TT; Xiao Y; Enright JM; Toomey <br/>MB; Corbo JC; Guengerich FP Human Cytochrome P450 27C1 Catalyzes 3,4-Desaturation of <br/>Retinoids. FEBS Lett 2016, 590, 1304&#8211;1312. [PubMed: 27059013] <br/></p>
+<p>(92). Johnson KM; Phan TTN; Albertolle ME; Guengerich FP Human Mitochondrial Cytochrome <br/>P450 27C1 is Localized in Skin and Preferentially Desaturates tan-Retinol to 3,4-Dehydroretinol. <br/>J Biol. Chem 2017, 292, 13672&#8211;13687. [PubMed: 28701464] <br/></p>
+<p>(93). Dunham NP; Chang WC; Mitchell AJ; Martinie RJ; Zhang B; Bergman JA; Rajakovich LJ; Wang <br/>B; Silakov A; Krebs Cet al. Two Distinct Mechanisms for C-C Desaturation by Iron(II)- and 2-<br/>(Oxo)glutarate-Dependent Oxygenases: Importance of &#945; -Heteroatom Assistance. J Am. Chem. <br/>Soc 2018, 140, 7116&#8211;7126. [PubMed: 29708749] <br/></p>
+<p>(94). Guy JE; Abreu IA; Moche M; Lindqvist Y; Whittle E; Shanklin J A Single Mutation in the Castor <br/>&#916;9-18:0-Desaturase Changes Reaction Partitioning from Desaturation to Oxidase Chemistry. <br/>Proc. Natl. Acad. Sci. U S. A 2006, 103, 17220&#8211;17224. [PubMed: 17088542] <br/></p>
+<p>Guengerich Page 17<br/></p>
+<p>ACS Catal. Author manuscript; available in PMC 2019 May 15.<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p>(95). Wojdyla Z; Borowski T On How the Binding Cavity of AsqJ Dioxygenase Controls the <br/>Desaturation Reaction Regioselectivity: A QM/MM Study. J Biol.inorg. Chem 2018, 23, 795&#8211;<br/>808. [PubMed: 29876666] <br/></p>
+<p>(96). Petrunak EM; Rogers SA; Aube J; Scott EE Structural and Functional Evaluation of Clinically <br/>Relevant Inhibitors of Steroidogenic Cytochrome P450 17A1. Drug Metab. Dispos 2017, 45, <br/>635&#8211;645. [PubMed: 28373265] <br/></p>
+<p>(97). Gonzalez E; Guengerich FP Kinetic Processivity of the Two-step Oxidations of Progesterone and <br/>Pregnenolone to Androgens by Human Cytochrome P450 17A1. J Biol. Chem 2017, 292, 13168&#8211;<br/>13185. [PubMed: 28684414] <br/></p>
+<p>(98). Imai T; Yamazaki T; Kominami S Kinetic Studies on Bovine Cytochrome P45011b Catalyzing <br/>Successive Reactions from Deoxycorticosterone to Aldosterone. Biochemistry 1998, 37, 8097&#8211;<br/>8104. [PubMed: 9609704] <br/></p>
+<p>(99). Yamazaki T; Ohno T; Sakaki T; Akiyoshi-Shibata M; Yabusaki Y; Imai T; Kominami S Kinetic <br/>Anaylsis of Successive Reactions Catalyzed by Bovine Cytochrome P45017a,lyase. Biochemistry <br/>1998, 37, 2800&#8211;2806. [PubMed: 9485431] <br/></p>
+<p>(100). Tagashira H; Kominami S; Takemori S Kinetic Studies of Cytochrome P45017&#945;,lyase <br/>dependent Androstenedione Formation from Progesterone. Biochemistry 1995, 34, 10939&#8211;<br/>10945. [PubMed: 7662675] <br/></p>
+<p>(101). Higuchi A; Kominami S; Takemori S Kinetic Control of Seroidogenesis by Steroid <br/>Concentration in Guinea Pig Adrenal Microsomes. Biochim. Biophys. Acta 1991, 1084, 240&#8211;<br/>246. [PubMed: 1888770] <br/></p>
+<p>(102). Sohl CD; Guengerich FP Kinetic Analysis of the Three-step Steroid Aromatase Reaction of <br/>Human Cytochrome P450 19A1. J Biol. Chem 2010, 285, 17734&#8211;17743. [PubMed: 20385561] <br/></p>
+<p>(103). Johnson KA Introduction to Kinetic Analysis of Enzyme Systems. In Kinetic Analysis of <br/>Macromolecules. A Practical Approach, Johnson KA, Ed.; Oxford University Press: Oxford, UK, <br/>2003; pp 1&#8211;18.<br/></p>
+<p>(104). Johnson KA Binding Equilibria. 12th New Enzymology Kinetics Workshop, KinTek, Austin, <br/>TX, 2017, p 23.<br/></p>
+<p>(105). Bell-Parikh LC; Guengerich FP Kinetics of Cytochrome P450 2E1-catalyzed Oxidation of <br/>Ethanol to Acetic Acid via Acetaldehyde. J Biol. Chem 1999, 274, 23833&#8211;23840. [PubMed: <br/>10446146] <br/></p>
+<p>(106). Chowdhury G; Calcutt MW; Nagy LD; Guengerich FP Oxidation of Methyl and Ethyl <br/>Nitrosamines by Cytochrome P450 2E1 and 2B1. Biochemistry 2012, 51, 9995&#8211;10007. <br/>[PubMed: 23186213] <br/></p>
+<p>(107). Chowdhury G; Calcutt MW; Guengerich FP Oxidation of N Nitrosoalkylamines by Human <br/>Cytochrome P450 2A6: Sequential Oxidation to Aldehydes and Carboxylic Acids and Analysis <br/>of Reaction Steps. J Biol. Chem 2010, 285, 8031&#8211;8044. [PubMed: 20061389] <br/></p>
+<p>(108). Hildebrandt A; Estabrook RW Evidence for the Participation of Cytochrome b5 in Hepatic <br/>Microsomal Mixed-Function Oxidation Reactions. Arch. Biochem. Biophys 1971, 143, 66&#8211;79. <br/>[PubMed: 4397839] <br/></p>
+<p>(109). Canova-Davis E; Chiang JYL; Waskell L Obligatory Role of Cytochrome b5 in the Microsomal <br/>Metabolism of Methoxyflurane. Biochem. Pharmacoi 1985, 34, 1907&#8211;1912.<br/></p>
+<p>(110). Gorsky LD; Coon MJ Effects of Conditions for Reconstitution with Cytochrome b5 on the <br/>Formation of Products in Cytochrome P-450-Catalyzed Reactions. Drug Metab. Dispos 1986, 14, <br/>89&#8211;96. [PubMed: 2868871] <br/></p>
+<p>(111). Jansson I; Schenkman JB Influence of Cytochrome b5 on the Stoichiometry of the Different <br/>Oxidative Reactions Catalyzed by Liver Microsomal Cytochrome P- 450. Drug Metab. Dispos <br/>1987, 15, 344&#8211;348. [PubMed: 2886309] <br/></p>
+<p>(112). Bart AG; Scott EE Structural and Functional Effects of Cytochrome b5 Interactions with Human <br/>Cytochrome P450 Enzymes. J Biol. Chem 2017, 292, 20818&#8211;20833. [PubMed: 29079577] <br/></p>
+<p>(113). Katagiri M; Kagawa N; Waterman MR The Role of Cytochrome b5 in the Biosynthesis of <br/>Androgens by Human P450c17. Arch. Biochem. Biophys 1995, 317, 343&#8211;347. [PubMed: <br/>7893148] <br/></p>
+<p>Guengerich Page 18<br/></p>
+<p>ACS Catal. Author manuscript; available in PMC 2019 May 15.<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p>(114). Yamazaki H; Johnson WW; Ueng YF; Shimada T; Guengerich FP Lack of Electron Transfer <br/>from Cytochrome b5 in Stimulation of Catalytic Activities of Cytochrome P450 3A4. <br/>Characterization of a Reconstituted Cytochrome P450 3A4/NADPH-Cytochrome P450 <br/>Reductase System and Studies with Apo-Cytochrome b5. J Biol. Chem 1996, 271, 27438&#8211;27444. <br/>[PubMed: 8910324] <br/></p>
+<p>(115). Lee-Robichaud P; Akhtar ME; Akhtar M Control of Androgen Biosynthesis in the Human <br/>Through the Interaction of Arg347 and Arg358 of CYP17 with Cytochrome b5. Biochem. J 1998, <br/>332, 293&#8211;296. [PubMed: 9601054] <br/></p>
+<p>(116). Auchus RJ; Lee TC; Miller WL Cytochrome b5 Augments the 17,20-Lyase Activity of Human <br/>P450c17 Without Direct Electron Transfer. J Biol. Chem 1998, 273, 3158&#8211;3165. [PubMed: <br/>9452426] <br/></p>
+<p>(117). Yamazaki H; Nakamura M; Komatsu T; Ohyama K; Hatanaka N; Asahi S; Shimada N; <br/>Guengerich FP; Shimada T; Nakajima M et al. Roles of NADPH-P450 Reductase and Apo- and <br/>Holo-Cytochrome b5 on Xenobiotic Oxidations Catalyzed by 12 Recombinant Human <br/>Cytochrome P450s Expressed in Membranes of Escherichia coli. Prot. Express. Purif 2002, 24, <br/>329&#8211;337.<br/></p>
+<p>(118). Guryev OL; Gilep AA; Usanov SA; Estabrook RW Interaction of Apo-Cytochrome b5 with <br/>Cytochromes P4503A4 and P45017A: Relevance of Heme Transfer Reactions. Biochemistry <br/>2001, 40, 5018&#8211;5031. [PubMed: 11305918] <br/></p>
+<p>(119). Yamazaki H; Shimada T; Martin MV; Guengerich FP Stimulation of Cytochrome P450 <br/>Reactions by Apo-Cytochrome b5 Evidence Against Transferof Heme from Cytochrome P450 <br/>3A4 to Apo-Cytochrome b5 or Heme Oxygenase. J Biol. Chem 2001, 276, 30885&#8211;30891. <br/>[PubMed: 11413149] <br/></p>
+<p>(120). Pearl NM; Wilcoxen J; Im S; Kunz R; Darty J; Britt RD; Ragsdale SW; Waskell L Protonation <br/>of the Hydroperoxo Intermediate of Cytochrome P450 2B4 Is Slower in the Presence of <br/>Cytochrome P450 Reductase Than in the Presence of Cytochrome b5. Biochemistry 2016, 55, <br/>6558&#8211;6567. [PubMed: 27797496] <br/></p>
+<p>(121). Yun CH; Kim KH; Calcutt MW; Guengerich FP Kinetic Analysis of Oxidation of Coumarins by <br/>Human Cytochrome P450 2A6. J Biol. Chem 2005, 280, 12279&#8211;12291. [PubMed: 15665333] <br/></p>
+<p>(122). Kim D; Cha GS; Nagy LD; Yun CH; Guengerich FP Kinetic Analysis of Lauric Acid <br/>Hydroxylation by Human Cytochrome P450 4A11. Biochemistry 2014, 53, 6161&#8211;6172. <br/>[PubMed: 25203493] <br/></p>
+<p>(123). Stiborova M; Indra R; Moserova M; Frei E; Schmeiser HH; Kopka K; Philips DH; Arlt VM <br/>NADH:Cytochrome b5 Reductase and Cytochrome b5 Can Act as Sole Electron Donors to <br/>Human Cytochrome P450 1A1-Mediated Oxidation and DNA Adduct Formation by <br/>Benzo[a]pyrene. Chem. Res. Toxicol 2016, 29, 1325&#8211;1334. [PubMed: 27404282] <br/></p>
+<p>(124). Reed L; Mrizova I; Barta F; Indra R; Moserova M; Kopka K; Schmeiser HH; Wolf CR; <br/>Henderson CJ; Stiborova M et al. Cytochrome b5 Impacts on Cytochrome P450-Mediated <br/>Metabolism of Benzo[a]pyrene and Its DNA Adduct Formation: Studies in Hepatic Cytochrome <br/>b5/P450 Reductase Null (HBRN) mice. Arch. Toxicol 2018, 92, 1625&#8211;1638. [PubMed: <br/>29368147] <br/></p>
+<p>(125). Estrada DF; Laurence JS; Scott EE Substrate-modulated Cytochrome P450 17A1 and <br/>Cytochrome b5 Interactions Revealed by NMR. J Biol. Chem 2013, 288, 17008&#8211;17018. <br/>[PubMed: 23620596] <br/></p>
+<p>(126). Peng HM; Liu J; Forsberg SE; Tran HT; Anderson SM; Auchus RJ Catalytically Relevant <br/>Electrostatic Interactions of Cytochrome P450c17 (CYP17A1) and Cytochrome b5 J Biol. Chem <br/>2014, 289, 33838&#8211;33849. [PubMed: 25315771] <br/></p>
+<p>(127). Yablokov E; Florinskaya A; Medvedev A; Sergeev G; Strushkevich N; Luschik A; Shkel T; <br/>Haidukevich I; Gilep A; Usanov Set al. Thermodynamicsof Interactions Between Mammalian <br/>Cytochromes P450 and b5. Arch. Biochem. Biophys 2017, 619, 10&#8211;15. [PubMed: 28238672] <br/></p>
+<p>(128). Shimada T; Mernaugh RL; Guengerich FP Interactions of Mammalian Cytochrome P450, <br/>NADPH-Cytochrome P450 Reductase, and Cytochrome b5 enzymes. Arch. Biochem. Biophys <br/>2005, 435, 207&#8211;216. [PubMed: 15680923] <br/></p>
+<p>Guengerich Page 19<br/></p>
+<p>ACS Catal. Author manuscript; available in PMC 2019 May 15.<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p>(129). Zhang H; Hamdane D; Im SC; Waskell L Cytochrome b5 Inhibits Electron Transfer from <br/>NADPH-Cytochrome P450 Reductase to Ferric Cytochrome P450 2B4. J Biol. Chem 2008, 283, <br/>5217&#8211;5225. [PubMed: 18086668] <br/></p>
+<p>(130). Finn RD; McLaughlin LA; Ronseaux S; Rosewell I; Houston JB; Henderson CJ; Wolf CR <br/>Defining the in Vivo Role for Cytochrome b5 in Cytochrome P450 Function through the <br/>Conditional Hepatic Deletion of Microsomal Cytochrome b5. J Biol. Chem 2008, 283, 31385&#8211;<br/>31393. [PubMed: 18805792] <br/></p>
+<p>(131). Henderson CJ; McLaughlin LA; Finn RD; Ronseaux S; Kapelyukh Y; Wolf CR A Role for <br/>Cytochrome b5 in the In Vivo Disposition of Anticancer and Cytochrome P450 Probe Drugs in <br/>Mice. Drug Metab. Dispos 2014, 42, 70&#8211;77. [PubMed: 24115751] <br/></p>
+<p>(132). West SB; Levin W; Ryan D; Vore M; Lu AYH Liver microsomal electron transport systems. II. <br/>The Involvement of Cytochrome b5 in the NADH-Dependent Hydroxylation of 3,4-Benzpyrene <br/>by a Reconstituted Cytochrome P-448- Containing System. Biochem. Biophys. Res. Commun <br/>1974, 58, 516&#8211;522. [PubMed: 4366168] <br/></p>
+<p>(133). Arnold FH Directed Evolution: Bringing New Chemistry to Life. Angew. Chem. Int. Ed 2017, <br/>57, 4143&#8211;4148.<br/></p>
+<p>(134). Knight AM; Kan SBJ; Lewis RD; Brandenberg OF; Chen K; Arnold FH Diverse Engineered <br/>Heme Proteins Enable Stereodivergent Cyclopropanation of Unactivated Alkenes. ACS Cent. Sci <br/>2018, 4, 372&#8211;377. [PubMed: 29632883] <br/></p>
+<p>(135). Hammer SC; Kubik G; Watkins E; Huang S; Minges H; Arnold FH Anti- Markovnikov Alkene <br/>Oxidation by Metal-oxo-mediated Enzyme Catalysis. Science 2017, 358, 215&#8211;218. [PubMed: <br/>29026041] <br/></p>
+<p>(136). Renata H; Lewis RD; Sweredoski MJ; Moradian A; Hess S; Wang ZJ; Arnold FH Identification <br/>of Mechanism-Based Inactivation in P450-Catalyzed Cyclopropanation Facilitates Engineering <br/>of Improved Enzymes. J Am. Chem. Soc 2016, 138, 12527&#8211;12533. [PubMed: 27573353] <br/></p>
+<p>(137). Renata H; Wang ZJ; Arnold FH Expanding the Enzyme Universe: Accessing Non-Natural <br/>Reactions by Mechanism-Guided Directed Evolution. Angew. Chem. Int. Ed 2015, 54, 3351&#8211;<br/>3367.<br/></p>
+<p>(138). Rentmeister A; Arnold FH; Fasan R Chemo-enzymatic Fluorination of Unactivated Organic <br/>Compounds. Nat. Chem. Biol 2009, 5, 26&#8211;28. [PubMed: 19011638] <br/></p>
+<p>(139). Wei Y; Tinoco A; Steck V; Fasan R; Zhang Y Cyclopropanations via Heme Carbenes: Basic <br/>Mechanism and Effects of Carbene Substituent, Protein Axial Ligand, and Porphyrin <br/>Substitution. J Am. Chem. Soc 2018, 140, 1649&#8211;1662. [PubMed: 29268614] <br/></p>
+<p>(140). Vargas DA; Tinoco A; Tyagi V; Fasan R Myoglobin-Catalyzed C-H Functionalization of <br/>Unprotected Indoles. Angew. Chem Int. Ed 2018, 57, 9911&#8211;9915.<br/></p>
+<p>(141). Sreenilayam G; Moore EJ; Steck V; Fasan R Metal Substitution Modulates the Reactivity and <br/>Extends the Reaction Scope of Myoglobin Carbene Transfer Catalysts. Adv. Synth. Catal 2017, <br/>359, 2076&#8211;2089. [PubMed: 29606929] <br/></p>
+<p>(142). Singh R; Bordeaux M; Fasan R P450-Catalyzed Intramolecular sp3 C-H Amination with <br/>Arylsulfonyl Azide Substrates. ACS Catal 2014, 4, 546&#8211;552. [PubMed: 24634794] <br/></p>
+<p>(143). Kolev JN; Zaengle JM; Ravikumar R; Fasan R Enhancing the Efficiency and Regioselectivity of <br/>P450 Oxidation Catalysts by Unnatural Amino Acid Mutagenesis. Chembiochem 2014, 15, <br/>1001&#8211;1010. [PubMed: 24692265] <br/></p>
+<p>(144). Giovani S; Alwaseem H; Fasan R Aldehyde and Ketone Synthesis by P450- Catalyzed <br/>Oxidative Deamination of Alkyl Azides. ChemCatChem 2016, 8, 2609&#8211;2613. [PubMed: <br/>27867424] <br/></p>
+<p>(145). Fasan R Enzymatic Catalysis: New Functional Twists for P450s. Nat. Chem 2017, 9, 609&#8211;611. <br/>[PubMed: 28644479] <br/></p>
+<p>(146). Ravichandran KG; Boddupalli SS; Hasemann CA; Peterson JA; Deisenhofer J Crystal Structure <br/>of Hemoprotein Domain of P450 BM-3, a Prototype for Microsomal P450&#8217;s. Science 1993, 261, <br/>731&#8211;736. [PubMed: 8342039] <br/></p>
+<p>(147). Sawayama AM; Chen MM; Kulanthaivel P; Kuo MS; Hemmerle H; Arnold FH A Panel of <br/>Cytochrome P450 BM3 Variants to Produce Drug Metabolites and Diversify Lead Compounds. <br/>Chemistry 2009, 15, 11723&#8211;11729. [PubMed: 19774562] <br/></p>
+<p>Guengerich Page 20<br/></p>
+<p>ACS Catal. Author manuscript; available in PMC 2019 May 15.<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p>(148). Fasan R; Meharenna YT; Snow CD; Poulos TL; Arnold FH Evolutionary History of a <br/>Specialized P450 Propane Monooxygenase. J Moi. Bioi 2008, 383, 1069&#8211;1080.<br/></p>
+<p>(149). Groves JT; Myers RS Catalytic Asymmetric Epoxidations with Chiral Iron Porphyrins. J Am. <br/>Chem. Soc 1983, 105, 5791&#8211;5796.<br/></p>
+<p>(150). Brandenberg OF; Prier CK; Chen K; Knight AM; Wu Z; Arnold FH Stereoselective Enzymatic <br/>Synthesis of Heteroatom-Substituted Cyclopropanes. ACS Catal 2018, 8, 2629&#8211;2634.<br/></p>
+<p>(151). White RE; McCarthy MB Aliphatic Hydroxylation by Cytochrome P-450. Evidence for Rapid <br/>Hydrolysis of an Intermediate Iron-Nitrene Complex. J Am. Chem. Soc 1984, 106, 4922&#8211;4926.<br/></p>
+<p>(152). Svastits EW; Dawson JH; Breslow R; Gellman SH Functionalized Nitrogen Atom Transfer <br/>Catalyzed by Cytochrome P-450. J Am. Chem. Soc 1985, 107, 6427&#8211;6428.<br/></p>
+<p>(153). Strushkevich N; MacKenzie F; Cherkesova T; Grabovec I; Usanov S; Park HW Structural Basis <br/>for Pregnenolone Biosynthesis by the Mitochondrial Monooxygenase System. Proc. Natl. Acad. <br/>Sci. U. S. A 2011, 108, 10139&#8211;10143. [PubMed: 21636783] <br/></p>
+<p>(154). Hiruma Y; Hass MAS; Kikui Y; Liu W-M; Olmez B; Skinner SP; Blok A; Kloosterman A; <br/>Koteishi H; Loehr F et al. The Structure of the Cytochrome P450cam-Putidaredoxin Complex <br/>Determined by Paramagnetic NMR Spectroscopy and Crystallography. J Mol. Bio 2013, 425, <br/>4353&#8211;4365. [PubMed: 23856620] <br/></p>
+<p>(155). Sevrioukova IF; Li H; Zhang H; Peterson JA; Poulos TL Structure of a Cytochrome P450-<br/>Redox Partner Electron-Transfer Complex. Proc. Nat. Acad. Sci. U. S. A 1999, 96, 1863&#8211;1868.<br/></p>
+<p>(156). Maekawa K; Adachi M; Matsuzawa Y; Zhang Q; Kuroki R; Saito Y; Shah MB Structural Basis <br/>of Single-Nucleotide Polymorphisms in Cytochrome P450 2C9. Biochemistry 2017, 56, 5476&#8211;<br/>5480. [PubMed: 28972767] <br/></p>
+<p>(157). Muroi Y; Saito T; Takahashi M; Sakuyama K; Niinuma Y; Ito M; Tsukada C; Ohta K; Endo Y; <br/>Oda A et al. Functional Characterization of Wild-type and 49 CYP2D6 Allelic Variants for N-<br/>Desmethyltamoxifen 4-Hydroxylation Activity. Drug Metab. Pharmacokin 2014, 29, 360&#8211;366.<br/></p>
+<p>(158). Pallan PS; Nagy LD; Lei L; Gonzalez E; Kramlinger VM; Azumaya CM; Wawrzak Z; <br/>Waterman MR; Guengerich FP; Egli M Structural and Kinetic Basis of Steroid 17 &#945;,20-Lyase <br/>Activity in Teleost Fish Cytochrome P450 17A1 and Its Absence in Cytochrome P450 17A2. J <br/>Biol. Chem 2015, 290, 3248&#8211;3268. [PubMed: 25533464] <br/></p>
+<p>(159). Pallan PS; Wang C; Lei L; Yoshimoto FK; Auchus RJ; Waterman MR; Guengerich FP; Egli M <br/>Human Cytochrome P450 21A2, the Major Steroid 21- Hydroxylase: Structure of the Enzyme-<br/>Progesterone Substrate Complex and Rate- Limiting C-H Bond Cleavage. J Biol. Chem 2015, <br/>290, 13128&#8211;13143. [PubMed: 25855791] <br/></p>
+<p>(160). Pallan PS; Lei L; Wang C; Waterman MR; Guengerich FP; Egli M Research Resource: <br/>Correlating Human Cytochrome P450 21A2 Crystal Structure and Phenotypes of Mutations in <br/>Congenital Adrenal Hyperplasia. Mol. Endocrinol 2015, 29, 1375&#8211;1384. [PubMed: 26172259] <br/></p>
+<p>(161). Wang C; Pallan PS; Zhang W; Lei L; Yoshimoto FK; Waterman MR; Egli M; Guengerich FP <br/>Functional Analysis of Human Cytochrome P450 21A2 Variants Involved in Congenital Adrenal <br/>Hyperplasia. J Biol. Chem 2017, 292, 10767&#8211;10778. [PubMed: 28539365] <br/></p>
+<p>(162). Roberts AG; Yang J; Halpert JR; Nelson SD; Thummel KT; Atkins WM The Structural Basis <br/>for Homotropic and Heterotropic Cooperativity of Midazolam Metabolism by Human <br/>Cytochrome P450 3A4. Biochemistry2011, 50, 10804&#8211;10818. [PubMed: 21992114] <br/></p>
+<p>(163). Livezey M; Nagy LD; Diffenderfer LE; Arthur EJ; Hsi DJ; Holton JM; Furge LL Molecular <br/>Analysis and Modeling of Inactivation of Human CYP2D6 by Four Mechanism Based <br/>Inactivators. Drug Metab. Lett 2012, 6, 7&#8211;14. [PubMed: 22372551] <br/></p>
+<p>(164). Cruciani G; Carosati E; De Boeck B; Ethirajulu K; Mackie C; Howe T; Vianello R MetaSite: <br/>Understanding Metabolism in Human Cytochromes from the Perspective of the Chemist. J Med. <br/>Chem 2005, 48, 6970&#8211;6979. [PubMed: 16250655] <br/></p>
+<p>(165). Trunzer M; Faller B; Zimmerlin A Metabolic Soft Spot Identification and Compound <br/>Optimization in Early Discovery Phases Using MetaSite and LC- MS/MS Validation. J Med. <br/>Chem 2009, 52, 329&#8211;335. [PubMed: 19108654] <br/></p>
+<p>(166). Shin YG; Le H; Khojasteh C; Hop CE Comparison of Metabolic Soft Spot Predictions of <br/>CYP3A4, CYP2C9 and CYP2D6 Substrates Using MetaSite and StarDrop. Comb. Chem. High <br/>Throughput Screen 2011, 14, 811&#8211;823. [PubMed: 21605066] <br/></p>
+<p>Guengerich Page 21<br/></p>
+<p>ACS Catal. Author manuscript; available in PMC 2019 May 15.<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p>(167). Boyer S; Arnby CH; Carlsson L; Smith J; Stein V; Glen RC Reaction Site Mapping of <br/>Xenobiotic Biotransformations. J Chem. info. Model 2007, 47, 583&#8211;590.<br/></p>
+<p>(168). Guengerich FP New Horizons in Predictive Toxicology: Current Status and Application. In <br/>Metabolism-Based Toxicity Prediction, Wilson AEG, Ed.; Royal Soc. Chem.: Cambridge, 2012, <br/>pp 542&#8211;562.<br/></p>
+<p>(169). Krauser JA; Voehler M; Tseng LH; Schefer AB; Godejohann M; Guengerich FP Testosterone <br/>1&#946;-Hydroxylation by Human Cytochrome P450 3A4. Eur. J. Biochem 2004, 271, 3962&#8211;3969. <br/>[PubMed: 15373842] <br/></p>
+<p>(170). Hammett LP The Effect of Structure upon the Reactions of Organic Compounds. Benzene <br/>Derivatives. J Am. Chem. Soc 1937, 59, 96&#8211;103.<br/></p>
+<p>(171). Smith MB; March J Quantitative Treatments of the Effect of Structure on Reactivity. March&#8217;s <br/>Advanced Organic Chemistry: Reactions, Mechanisms, and Structure; 6th ed; Wiley-<br/>Interscience: New York, 2007, pp 401&#8211;412.<br/></p>
+<p>(172). Ekroos M; Sj&#246;gren T Structural Basis for Ligand Promiscuity in Cytochrome P450 3A4. Proc. <br/>Natl. Acad. Sci. U. S. A 2006, 103, 13682&#8211;13687. [PubMed: 16954191] <br/></p>
+<p>(173). Estrada DF; Skinner AL; Laurence JS; Scott EE Human Cytochrome P450 17A1 <br/>Conformational Selection: Modulation by Ligand and Cytochrome &#163;5. J Biol. Chem 2014, 289, <br/>14310&#8211;14320. [PubMed: 24671419] <br/></p>
+<p>(174). Johnson KA Role of Induced Fit in Enzyme Specificity: A Molecular Forward/Reverse Switch. <br/>J Biol. Chem 2008, 283, 26297&#8211;26301. [PubMed: 18544537] <br/></p>
+<p>(175). Isin EM; Guengerich FP Kinetics and Thermodynamics of Ligand Binding by Cytochrome <br/>P450 3A4. J Biol. Chem 2006, 281, 9127&#8211;9136. [PubMed: 16467307] <br/></p>
+<p>(176). Isin EM; Guengerich FP Multiple Sequential Steps Involved in the Binding of Inhibitors to <br/>Cytochrome P450 3A4. J Biol. Chem 2007, 282, 6863&#8211;6874. [PubMed: 17200113] <br/></p>
+<p>(177). Griffin BW; Peterson JA Camphor Binding by Pseudomonas putida Cytochrome P-450. <br/>Kinetics and Thermodynamics of the Reaction. Biochemistry 1972, 11, 4740&#8211;4746. [PubMed: <br/>4655251] <br/></p>
+<p>(178). Sevrioukova IF; Poulos TL Dissecting Cytochrome P450 3A4-Ligand Interactions Using <br/>Ritonavir Analogues. Biochemistry2013, 52, 4474&#8211;4481. [PubMed: 23746300] <br/></p>
+<p>(179). Sohl CD; Isin EM; Eoff RL; Marsch GA; Stec DF; Guengerich FP Cooperativity in Oxidation <br/>Reactions Catalyzed by Cytochrome P450 1A2: Highly Cooperative Pyrene Hydroxylation and <br/>Multiphasic Kinetics of Ligand Binding. J Biol. Chem 2008, 283, 7293&#8211;7308. [PubMed: <br/>18187423] <br/></p>
+<p>Guengerich Page 22<br/></p>
+<p>ACS Catal. Author manuscript; available in PMC 2019 May 15.<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p><b>Scheme 1. <br/></b>General catalytic cycle for P450 reactions.6,19 In some cases cytochrome b5 (b5) can donate <br/>the electron in step <b>4</b>. b5 can also donate the electron in step <b>2</b> although not as efficiently <br/>because of the thermodynamic barrier. In some P450s (some bacterial and mitochondrial <br/>P450s) steps <b>2</b> and <b>4</b> involve electron donation from ferredoxin proteins. The exact <br/>electronic distribution in the Fe-O entities between steps <b>4</b>&#8211;<b>8</b> is not well established in most <br/>cases.<br/></p>
+<p>Guengerich Page 23<br/></p>
+<p>ACS Catal. Author manuscript; available in PMC 2019 May 15.<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p><b>Scheme 2. <br/></b>An example of the differences between explaining multiple reaction products by (A) a <br/>common intermediate, with variations due to the protein,8,67 and (B)&#8221;two-state&#8221; (actually <br/>multistate) theory.66.<br/></p>
+<p>Guengerich Page 24<br/></p>
+<p>ACS Catal. Author manuscript; available in PMC 2019 May 15.<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p><b>Scheme 3. <br/></b>Potential desaturation mechanisms for oxygenases. (A) P450s; (B) non-heme diiron <br/>enzymes; (C) iron/&#945;-ketoglutarate (&#945;-KG) dioxygenases.93<br/></p>
+<p>Guengerich Page 25<br/></p>
+<p>ACS Catal. Author manuscript; available in PMC 2019 May 15.<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p><b>Scheme 4. <br/></b>Processivity in multistep reactions. The enzyme (E) catalyzes the conversion of A &#8594; B &#8594; <br/>C, e.g, P450 17A1.97 The degree of processivity is dominated by the ratio k4 k-3, although <br/>other rate constants can contribute.104<br/></p>
+<p>Guengerich Page 26<br/></p>
+<p>ACS Catal. Author manuscript; available in PMC 2019 May 15.<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p><b>Scheme 5. <br/></b>Some unusual reactions catalyzed by modified P450 catalysts.135,144,145 Ts: tosyl.<br/></p>
+<p>Guengerich Page 27<br/></p>
+<p>ACS Catal. Author manuscript; available in PMC 2019 May 15.<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p><b>Scheme 6. <br/></b>A proposed mechanism of nitrene transfer for P450s.144<br/></p>
+<p>Guengerich Page 28<br/></p>
+<p>ACS Catal. Author manuscript; available in PMC 2019 May 15.<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript</p>
+
+</div></div>
+<div style="page-break-before:always; page-break-after:always"><div><p><b>Scheme 7. <br/></b>Induced fit vs. conformational selection hypotheses to explain multiplicity of enzyme <br/>conformations involved in catalysis.<br/></p>
+<p>Guengerich Page 29<br/></p>
+<p>ACS Catal. Author manuscript; available in PMC 2019 May 15.<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript<br/></p>
+<p>A<br/>uthor M<br/></p>
+<p>anuscript<br/>A<br/></p>
+<p>uthor M<br/>anuscript</p>
+
+</div></div>
+</body></html>
