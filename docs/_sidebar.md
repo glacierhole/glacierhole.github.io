@@ -8,3 +8,6 @@
 
 - 学习笔记~专业相关
     - [生物信息工具库](study_note/bio.md)
+
+- 学习笔记~创造的格局
+    - [Sam Altman的创业手册](create_note/SamAltman1.md)
