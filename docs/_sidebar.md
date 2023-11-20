@@ -5,7 +5,7 @@
 
 - 生存笔记
     - [学习向上管理](survive_note/up.md)
-
+    - [学习沟通技巧](survive_note/connect.md)
 - 学习笔记~专业相关
     - [生物信息工具库](study_note/bio.md)
 
