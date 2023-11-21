@@ -4,6 +4,8 @@
 # 饶一率的工具空间
 [饶一率的工具空间](https://tool-rao.streamlit.app/)
 
+<img width="160px" style="border-radius: 50%" bor src="puppy.png">
+
 ## 这是饶的人际关系网络
 [人际关系网络不可见](https://glacierhole.github.io/docs/project/-PeopleYun.html)
 ## 这是酶工程会议的词云
