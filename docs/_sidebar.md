@@ -6,8 +6,9 @@
     - [学习visNetwork笔记](study_note/visNetwork.md)
 
 - 生存笔记
-    - [学习向上管理](survive_note/up.md)
-    - [学习沟通技巧](survive_note/connect.md)
+    - [向上管理](survive_note/向上管理.md)
+    - [沟通](survive_note/沟通.md)
+    - [钝感力](survive_note/钝感力.md)
 - 学习笔记~专业相关
     - [生物信息工具库](study_note/bio.md)
 

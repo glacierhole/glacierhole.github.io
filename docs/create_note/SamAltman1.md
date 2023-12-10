@@ -1,7 +1,7 @@
 # Sam Altman 的创业手册
 源网页：https://mp.weixin.qq.com/s/HWz7CWjJwLm6FfwgMi37sA
 
-文章来源@极客公园Founder Park
+文章来源：公众号@极客公园Founder Park
 
 &emsp;&emsp;【导读饶】23/11/20 Sam Altman是近两天的风云人物，他与OpenAI的故事以及他作为一个优秀CEO的能耐很令人感兴趣，也许他的经验是更近的。
 
