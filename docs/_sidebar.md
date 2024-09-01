@@ -15,3 +15,5 @@
 - 学习笔记~创造的格局
     - [Sam Altman的创业手册](create_note/SamAltman1.md)
     - [当一群教授走出象牙塔](create_note/professor1.md)
+    - [李沐的演讲](create_note/LiMu.md)
+
